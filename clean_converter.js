@@ -82,6 +82,16 @@ function processHtmlFile(filePath) {
     const scripts = body.querySelectorAll('script');
     scripts.forEach(s => s.remove());
     
+    // Remove localized navs, headers, footers
+    const navs = body.querySelectorAll('nav');
+    navs.forEach(n => n.remove());
+    
+    const headers = body.querySelectorAll('header');
+    headers.forEach(h => h.remove());
+    
+    const footers = body.querySelectorAll('footer');
+    footers.forEach(f => f.remove());
+    
     // htmltojsx doesn't convert comments, it completely removes them! 
     // This is perfect, because we don't need <!-- Hero --> in production!
     
@@ -94,7 +104,9 @@ function processHtmlFile(filePath) {
     let imports = [
         'import Link from "next/link";',
         'import { submitNewsletter } from "@/app/actions/forms";',
-        'import { ClientFormWrapper } from "@/app/components/ClientFormWrapper";'
+        'import { ClientFormWrapper } from "@/app/components/ClientFormWrapper";',
+        'import PublicHeader from "@/app/components/PublicHeader";',
+        'import PublicFooter from "@/app/components/PublicFooter";'
     ];
     
     if (routeDir === 'contact') {
@@ -130,7 +142,9 @@ function processHtmlFile(filePath) {
 export default function Page() {
   return (
     <div className="${body.className}">
+      <PublicHeader />
 ${jsxContent}
+      <PublicFooter />
     </div>
   );
 }
