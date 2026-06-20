@@ -9,7 +9,7 @@ const contactSchema = z.object({
   message: z.string().min(10, "Message must be at least 10 characters"),
 });
 
-export async function submitContactForm(prevState: any, formData: FormData) {
+export async function submitContactForm(prevState: unknown, formData: FormData) {
   const data = Object.fromEntries(formData.entries());
   
   const result = contactSchema.safeParse(data);
@@ -54,7 +54,7 @@ const bookingSchema = z.object({
   notes: z.string().optional(),
 });
 
-export async function submitBookingForm(prevState: any, formData: FormData) {
+export async function submitBookingForm(prevState: unknown, formData: FormData) {
   const data = Object.fromEntries(formData.entries());
   
   const result = bookingSchema.safeParse(data);
@@ -97,7 +97,7 @@ const newsletterSchema = z.object({
   email: z.string().email("Invalid email address"),
 });
 
-export async function submitNewsletter(prevState: any, formData: FormData) {
+export async function submitNewsletter(prevState: unknown, formData: FormData) {
   const email = formData.get("email");
   
   const result = newsletterSchema.safeParse({ email });

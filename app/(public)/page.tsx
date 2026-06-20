@@ -52,7 +52,7 @@ export default function Page() {
 {/* Pillar 1 */}
 <div className="bg-surface-cream rounded-xl p-10 border border-secondary-container hover:shadow-2xl transition-shadow duration-500 flex flex-col items-start group">
 <div className="w-16 h-16 rounded-full bg-surface-bright flex items-center justify-center mb-8 border border-secondary-container group-hover:border-tertiary-fixed-dim transition-colors">
-<span className="material-symbols-outlined text-primary" style={{ 'font-size': '32px', fontVariationSettings: ''FILL' 0' }}>psychology</span>
+<span className="material-symbols-outlined text-primary" style={{ fontSize: '32px', fontVariationSettings: `"FILL" 0` }}>psychology</span>
 </div>
 <h3 className="font-headline-md text-headline-md text-primary mb-4">Clinical Expertise</h3>
 <p className="font-body-md text-body-md text-on-surface-variant flex-grow">
@@ -63,7 +63,7 @@ export default function Page() {
 <div className="bg-primary text-on-primary rounded-xl p-10 shadow-lg flex flex-col items-start relative overflow-hidden">
 <div className="absolute -top-24 -right-24 w-64 h-64 bg-ether-indigo-light rounded-full blur-3xl opacity-50"></div>
 <div className="w-16 h-16 rounded-full bg-primary-container flex items-center justify-center mb-8 border border-ether-indigo-light relative z-10">
-<span className="material-symbols-outlined text-tertiary-fixed-dim" style={{ 'font-size': '32px', fontVariationSettings: ''FILL' 1' }}>spa</span>
+<span className="material-symbols-outlined text-tertiary-fixed-dim" style={{ fontSize: '32px', fontVariationSettings: `"FILL" 1` }}>spa</span>
 </div>
 <h3 className="font-headline-md text-headline-md text-surface-bright mb-4 relative z-10">Spiritual Wisdom</h3>
 <p className="font-body-md text-body-md text-primary-fixed-dim flex-grow relative z-10">
@@ -73,7 +73,7 @@ export default function Page() {
 {/* Pillar 3 */}
 <div className="bg-surface-cream rounded-xl p-10 border border-secondary-container hover:shadow-2xl transition-shadow duration-500 flex flex-col items-start group">
 <div className="w-16 h-16 rounded-full bg-surface-bright flex items-center justify-center mb-8 border border-secondary-container group-hover:border-tertiary-fixed-dim transition-colors">
-<span className="material-symbols-outlined text-primary" style={{ 'font-size': '32px', fontVariationSettings: ''FILL' 0' }}>diversity_1</span>
+<span className="material-symbols-outlined text-primary" style={{ fontSize: '32px', fontVariationSettings: `"FILL" 0` }}>diversity_1</span>
 </div>
 <h3 className="font-headline-md text-headline-md text-primary mb-4">Inclusive Advocacy</h3>
 <p className="font-body-md text-body-md text-on-surface-variant flex-grow">
@@ -89,21 +89,21 @@ export default function Page() {
 <h2 className="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-8">Professional Standing</h2>
 <ul className="space-y-6">
 <li className="flex items-start">
-<span className="material-symbols-outlined text-tertiary-fixed-dim mr-4 mt-1" style={{ fontVariationSettings: ''FILL' 1' }}>verified</span>
+<span className="material-symbols-outlined text-tertiary-fixed-dim mr-4 mt-1" style={{ fontVariationSettings: `"FILL" 1` }}>verified</span>
 <div>
 <span className="block font-label-lg text-label-lg text-primary">OASAS-Approved Education Provider</span>
 <span className="block font-body-md text-body-md text-on-surface-variant mt-1">Provider ID: #1158</span>
 </div>
 </li>
 <li className="flex items-start">
-<span className="material-symbols-outlined text-tertiary-fixed-dim mr-4 mt-1" style={{ fontVariationSettings: ''FILL' 1' }}>handshake</span>
+<span className="material-symbols-outlined text-tertiary-fixed-dim mr-4 mt-1" style={{ fontVariationSettings: `"FILL" 1` }}>handshake</span>
 <div>
 <span className="block font-label-lg text-label-lg text-primary">NCADD Partnerships</span>
 <span className="block font-body-md text-body-md text-on-surface-variant mt-1">Collaborating for excellence in addiction treatment.</span>
 </div>
 </li>
 <li className="flex items-start">
-<span className="material-symbols-outlined text-tertiary-fixed-dim mr-4 mt-1" style={{ fontVariationSettings: ''FILL' 1' }}>menu_book</span>
+<span className="material-symbols-outlined text-tertiary-fixed-dim mr-4 mt-1" style={{ fontVariationSettings: `"FILL" 1` }}>menu_book</span>
 <div>
 <span className="block font-label-lg text-label-lg text-primary">Published Author</span>
 <span className="block font-body-md text-body-md text-on-surface-variant mt-1">Author of 5 acclaimed books bridging therapy and spirituality.</span>
@@ -119,7 +119,7 @@ export default function Page() {
  Mission/Vision 
 <section className="py-24 md:py-32 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center">
 <div className="max-w-3xl mx-auto space-y-12">
-<span className="material-symbols-outlined text-tertiary-fixed-dim opacity-50" style={{ 'font-size': '48px' }}>flare</span>
+<span className="material-symbols-outlined text-tertiary-fixed-dim opacity-50" style={{ fontSize: '48px' }}>flare</span>
 <div>
 <h2 className="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-6">Our Purpose &amp; The Sanctuary</h2>
 <p className="font-body-lg text-body-lg text-on-surface-variant">

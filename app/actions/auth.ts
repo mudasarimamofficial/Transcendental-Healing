@@ -9,7 +9,7 @@ const loginSchema = z.object({
   password: z.string().min(6),
 });
 
-export async function loginAction(prevState: any, formData: FormData) {
+export async function loginAction(prevState: unknown, formData: FormData) {
   const data = Object.fromEntries(formData.entries());
   const result = loginSchema.safeParse(data);
 

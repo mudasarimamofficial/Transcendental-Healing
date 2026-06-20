@@ -40,7 +40,7 @@ export default function Page() {
 <div className="flex items-center gap-6">
 {/* Play Button */}
 <button className="w-16 h-16 rounded-full bg-primary text-on-primary flex items-center justify-center flex-shrink-0 hover:bg-ether-indigo-light transition-colors duration-300 focus:outline-none focus:ring-4 focus:ring-primary/20">
-<span className="material-symbols-outlined text-3xl" style={{ fontVariationSettings: ''FILL' 1' }}>play_arrow</span>
+<span className="material-symbols-outlined text-3xl" style={{ fontVariationSettings: `"FILL" 1` }}>play_arrow</span>
 </button>
 {/* Progress Bar & Timers */}
 <div className="flex-grow flex flex-col gap-2">
@@ -254,7 +254,7 @@ export default function Page() {
 <div className="absolute inset-0 opacity-20 pointer-events-none">
 </div>
 <div className="relative z-10 max-w-2xl mx-auto flex flex-col items-center">
-<span className="material-symbols-outlined text-tertiary-fixed-dim text-5xl mb-6" style={{ fontVariationSettings: ''FILL' 1' }}>spa</span>
+<span className="material-symbols-outlined text-tertiary-fixed-dim text-5xl mb-6" style={{ fontVariationSettings: `"FILL" 1` }}>spa</span>
 <h2 className="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-primary mb-6">Deepen Your Practice</h2>
 <p className="font-body-lg text-body-lg text-primary-fixed-dim mb-10">
                         Subscribe to our newsletter for exclusive show notes, somatic exercises, and early access to live workshops. A quiet transmission to your inbox, once a month.
