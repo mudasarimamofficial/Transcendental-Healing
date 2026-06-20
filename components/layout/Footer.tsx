@@ -1,4 +1,5 @@
 import Link from "next/link";
+import NewsletterForm from "@/components/forms/NewsletterForm";
 
 export default function Footer() {
   return (
@@ -82,23 +83,7 @@ export default function Footer() {
           <h4 className="font-label-lg text-label-lg text-primary mb-4">
             Stay Connected
           </h4>
-          <form className="space-y-3">
-            <label className="sr-only" htmlFor="footer-email">
-              Email address
-            </label>
-            <input
-              className="w-full bg-background border border-secondary-container rounded-md px-4 py-2 font-body-md text-body-md focus:outline-none focus:border-healing-sage focus:ring-1 focus:ring-healing-sage placeholder-outline transition-colors"
-              id="footer-email"
-              placeholder="Email address"
-              type="email"
-            />
-            <button
-              className="w-full bg-primary text-surface-cream font-label-lg text-label-lg py-2 rounded-md hover:bg-ether-indigo-light transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
-              type="submit"
-            >
-              Newsletter Signup
-            </button>
-          </form>
+          <NewsletterForm />
         </div>
       </div>
       <div className="mt-16 pt-8 border-t border-secondary-container/50 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center font-body-md text-body-md text-secondary dark:text-on-secondary-container text-sm">
