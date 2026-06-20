@@ -1,10 +1,32 @@
-import Image from "next/image";
 import Link from "next/link";
-
+// PIXEL PERFECT ROLLBACK PAGE
 export default function Page() {
   return (
     <>
+      {/* START RAW HTML IMPORT */}
       
+<nav className="fixed top-0 w-full z-50 bg-surface-cream/80 backdrop-blur-md dark:bg-primary/80 border-b border-secondary-container/30">
+<div className="flex justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto">
+<div className="font-headline-md text-headline-md font-medium tracking-tight text-primary dark:text-primary-fixed-dim">
+                Transcendental Healing
+            </div>
+<div className="hidden md:flex items-center gap-8">
+<a className="font-label-lg text-label-lg text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300" href="#">Home</a>
+<a className="font-label-lg text-label-lg text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300" href="#">About</a>
+<a className="font-label-lg text-label-lg text-primary dark:text-primary-fixed-dim border-b-2 border-healing-sage pb-1 opacity-80 transition-opacity duration-200" href="#">Services</a>
+<a className="font-label-lg text-label-lg text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300" href="#">Education</a>
+<a className="font-label-lg text-label-lg text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300" href="#">Podcast</a>
+<a className="font-label-lg text-label-lg text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300" href="#">Resources</a>
+</div>
+<button className="bg-primary text-on-primary font-label-lg text-label-lg px-8 py-3 rounded hover:bg-primary/90 transition-colors hidden md:block">
+                Book a Session
+            </button>
+<button className="md:hidden text-primary">
+<span className="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main className="pt-32 pb-24">
 <section className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop pt-16 pb-32">
 <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
 <div className="lg:col-span-5 z-10 pr-8">
@@ -21,7 +43,7 @@ export default function Page() {
 </div>
 <div className="lg:col-span-7 mt-16 lg:mt-0 relative">
 <div className="aspect-[4/5] md:aspect-[3/2] w-full rounded-lg overflow-hidden bg-surface-cream border border-secondary-container relative">
-<Image fill className="w-full h-full object-cover" data-alt="A highly detailed, macro photograph of warm hands pouring aromatic, golden-hued massage oil onto a smooth surface. Soft, ethereal lighting creating a glowing 'light-mode' aesthetic. The color palette features warm sands, muted golds, and a hint of deep indigo in the shadows. The mood is deeply calming, luxurious, and rooted in ancient holistic healing practices." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3rC-bR8AoNWE8bHVA1gDu0xalTqNDyEGQ180UjRsmXeWvKZp8P-NDmQIDXU9tee5zCCvIu3On9kAF4iUcPWfvKcZdfwOT0mFnLH8Xc3ItCyHbjSncGitVQMI-sNSBgsnYWIuPeh-a41Ho0L4MGmF0Hwg_q8odkL-iwdNxeIYg8izFoaCmE8YJsSW0JN07usVJxT_XYz_86QDZsPlWvricmth9c4iLKOKYw8nirk5DnC5yH-w3J7qPNS6ON-4aOo_ZZvQuBjxRzYfL"/>
+<img className="w-full h-full object-cover" data-alt="A highly detailed, macro photograph of warm hands pouring aromatic, golden-hued massage oil onto a smooth surface. Soft, ethereal lighting creating a glowing 'light-mode' aesthetic. The color palette features warm sands, muted golds, and a hint of deep indigo in the shadows. The mood is deeply calming, luxurious, and rooted in ancient holistic healing practices." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3rC-bR8AoNWE8bHVA1gDu0xalTqNDyEGQ180UjRsmXeWvKZp8P-NDmQIDXU9tee5zCCvIu3On9kAF4iUcPWfvKcZdfwOT0mFnLH8Xc3ItCyHbjSncGitVQMI-sNSBgsnYWIuPeh-a41Ho0L4MGmF0Hwg_q8odkL-iwdNxeIYg8izFoaCmE8YJsSW0JN07usVJxT_XYz_86QDZsPlWvricmth9c4iLKOKYw8nirk5DnC5yH-w3J7qPNS6ON-4aOo_ZZvQuBjxRzYfL"/>
 <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent mix-blend-multiply"></div>
 </div>
 </div>
@@ -59,7 +81,7 @@ export default function Page() {
 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
 <div className="col-span-1 md:col-span-2 bg-surface-cream rounded border border-secondary-container p-8 flex flex-col justify-end min-h-[400px] relative overflow-hidden group">
 <div className="absolute inset-0 z-0">
-<Image fill className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-1000" data-alt="A minimalist, artistic top-down view of smooth, pale river stones arranged symmetrically on a pristine, textured linen cloth in soft sand tones. Gentle, diffused sunlight filtering from the top left, casting soft shadows. The visual style is modern-luxury, evoking a premium wellness resort atmosphere. The color scheme is dominated by cream, soft beige, and subtle sage greens." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDlN8jkv3WdcDLpEdgzBGGNIfyusGxc3ncjNa3JIolYeeiZazoNgL0ter4NeRx_mAeW00aeAvdJ7kZutJb4BzLr_XEaky5GJt6MPFNoCzY50USFvIhjboxtc3kuhKnYtBhh8E65IzPIB9UsYCEkJDdrBYPqQ_WqAoLdVmlrGqCCENXx17XAteJ0zTeDipzT2lmZKjnBcNwq5egQiJ5vSwOofFK__yM0WzbY9fStxgm33pSfkKY-cDjD9enMFTeknNRdnnJlDlPfRAa"/>
+<img className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-1000" data-alt="A minimalist, artistic top-down view of smooth, pale river stones arranged symmetrically on a pristine, textured linen cloth in soft sand tones. Gentle, diffused sunlight filtering from the top left, casting soft shadows. The visual style is modern-luxury, evoking a premium wellness resort atmosphere. The color scheme is dominated by cream, soft beige, and subtle sage greens." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDlN8jkv3WdcDLpEdgzBGGNIfyusGxc3ncjNa3JIolYeeiZazoNgL0ter4NeRx_mAeW00aeAvdJ7kZutJb4BzLr_XEaky5GJt6MPFNoCzY50USFvIhjboxtc3kuhKnYtBhh8E65IzPIB9UsYCEkJDdrBYPqQ_WqAoLdVmlrGqCCENXx17XAteJ0zTeDipzT2lmZKjnBcNwq5egQiJ5vSwOofFK__yM0WzbY9fStxgm33pSfkKY-cDjD9enMFTeknNRdnnJlDlPfRAa"/>
 <div className="absolute inset-0 bg-gradient-to-t from-surface-cream via-surface-cream/50 to-transparent"></div>
 </div>
 <div className="relative z-10">
@@ -79,7 +101,7 @@ export default function Page() {
 <p className="font-body-md text-body-md text-secondary">Custom-blended warm herbal oils, selected based on your current doshic imbalance, are absorbed transdermally to nourish tissues and calm the mind.</p>
 </div>
 <div className="mt-8">
-<Image fill className="w-full h-40 object-cover rounded" data-alt="A close-up, high-end editorial shot of dried Ayurvedic herbs, including vibrant turmeric root, pale cardamom pods, and deep green tulsi leaves, resting in a shallow, matte ceramic bowl. The bowl sits on a polished dark wood surface reflecting deep indigo hues. The lighting is crisp yet soft, highlighting the natural textures and creating an atmosphere of organic purity and professional authority." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBO-NaCnKhEy6pxzd3z6Gqsmq2ViuXEAhbMiY-RCLQwt4hlgJnXEvvRJOcIfuqZaddEDgxqCdQ_9LAqcUNTmT_zubn1epksQGn3IfJh2DZsFaEm0fjpJqNHuYHxdl2AqkUHHP30SF_y4zk-LLNjVv1vsy3twaKXOfJaQNMR3XwPr-3u1wbzAFwkDAIFvIqq1SC8dQn0oY1EQo66MtvkjJeFsl08UpBP3cwIKufmjcOaH1umyhdHua098dD0VxbO9kS7e-cuVyD6wRF2"/>
+<img className="w-full h-40 object-cover rounded" data-alt="A close-up, high-end editorial shot of dried Ayurvedic herbs, including vibrant turmeric root, pale cardamom pods, and deep green tulsi leaves, resting in a shallow, matte ceramic bowl. The bowl sits on a polished dark wood surface reflecting deep indigo hues. The lighting is crisp yet soft, highlighting the natural textures and creating an atmosphere of organic purity and professional authority." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBO-NaCnKhEy6pxzd3z6Gqsmq2ViuXEAhbMiY-RCLQwt4hlgJnXEvvRJOcIfuqZaddEDgxqCdQ_9LAqcUNTmT_zubn1epksQGn3IfJh2DZsFaEm0fjpJqNHuYHxdl2AqkUHHP30SF_y4zk-LLNjVv1vsy3twaKXOfJaQNMR3XwPr-3u1wbzAFwkDAIFvIqq1SC8dQn0oY1EQo66MtvkjJeFsl08UpBP3cwIKufmjcOaH1umyhdHua098dD0VxbO9kS7e-cuVyD6wRF2"/>
 </div>
 </div>
 </div>
@@ -89,7 +111,7 @@ export default function Page() {
 <svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
 <defs>
 <pattern height="40" id="grid" patternunits="userSpaceOnUse" width="40">
-<path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="0.5"></path>
+<path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" strokeWidth="0.5"></path>
 </pattern>
 </defs>
 <rect fill="url(#grid)" height="100%" width="100%"></rect>
@@ -105,7 +127,43 @@ export default function Page() {
                 </button>
 </div>
 </section>
+</main>
+<footer className="w-full pt-20 pb-10 bg-surface dark:bg-primary-container border-t border-secondary-container">
+<div className="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max mx-auto">
+<div className="col-span-1 md:col-span-1 mb-10 md:mb-0">
+<div className="font-headline-lg text-headline-lg text-primary dark:text-primary-fixed-dim mb-4">
+                    Transcendental Healing
+                </div>
+<p className="font-body-md text-body-md text-secondary dark:text-on-secondary-container mt-4">
+                    © 2024 Transcendental Healing. All Rights Reserved.
+                </p>
+</div>
+<div className="col-span-1">
+<h4 className="font-label-lg text-label-lg text-primary dark:text-primary-fixed-dim mb-6 uppercase tracking-wider">Services</h4>
+<ul className="space-y-4">
+<li><a className="font-body-md text-body-md text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="#">Addiction Recovery</a></li>
+<li><a className="font-body-md text-body-md text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="#">Ayurvedic Healing</a></li>
+<li><a className="font-body-md text-body-md text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="#">Reflexology</a></li>
+</ul>
+</div>
+<div className="col-span-1">
+<h4 className="font-label-lg text-label-lg text-primary dark:text-primary-fixed-dim mb-6 uppercase tracking-wider">Practice</h4>
+<ul className="space-y-4">
+<li><a className="font-body-md text-body-md text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="#">Yoga &amp; Breathwork</a></li>
+<li><a className="font-body-md text-body-md text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="#">Tarot</a></li>
+<li><a className="font-body-md text-body-md text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="#">Professional Training</a></li>
+</ul>
+</div>
+<div className="col-span-1">
+<h4 className="font-label-lg text-label-lg text-primary dark:text-primary-fixed-dim mb-6 uppercase tracking-wider">Connect</h4>
+<ul className="space-y-4">
+<li><a className="font-body-md text-body-md text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="#">Newsletter Signup</a></li>
+</ul>
+</div>
+</div>
+</footer>
 
+      {/* END RAW HTML IMPORT */}
     </>
   );
 }

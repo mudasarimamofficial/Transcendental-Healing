@@ -97,7 +97,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="bg-background text-on-background selection:bg-healing-sage/30 selection:text-primary min-h-screen flex flex-col">
+      <body className="bg-background text-on-background antialiased selection:bg-healing-sage/30 selection:text-primary">
         {children}
       </body>
     </html>

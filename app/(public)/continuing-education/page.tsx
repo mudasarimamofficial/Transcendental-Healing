@@ -1,15 +1,42 @@
 import Link from "next/link";
-
+// PIXEL PERFECT ROLLBACK PAGE
 export default function Page() {
   return (
     <>
+      {/* START RAW HTML IMPORT */}
       
- Hero Section 
+ TopNavBar 
+<nav className="fixed top-0 w-full z-50 bg-surface-cream/80 backdrop-blur-md dark:bg-primary/80 bg-surface-cream/90 border-b border-secondary-container/30">
+<div className="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<div className="font-headline-md text-headline-md font-medium tracking-tight text-primary dark:text-primary-fixed-dim">
+                Transcendental Healing
+            </div>
+<div className="hidden md:flex items-center space-x-8">
+<a className="font-label-lg text-label-lg text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300" href="#">Home</a>
+<a className="font-label-lg text-label-lg text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300" href="#">About</a>
+<a className="font-label-lg text-label-lg text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300" href="#">Services</a>
+<a className="font-label-lg text-label-lg text-primary dark:text-primary-fixed-dim border-b-2 border-healing-sage pb-1 Active: opacity-80 transition-opacity duration-200" href="#">Education</a>
+<a className="font-label-lg text-label-lg text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300" href="#">Podcast</a>
+<a className="font-label-lg text-label-lg text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300" href="#">Resources</a>
+</div>
+<div className="hidden md:block">
+<a className="inline-flex items-center justify-center px-8 py-3 bg-primary text-tertiary-fixed font-label-lg text-label-lg rounded transition-colors hover:bg-ether-indigo-light" href="#enroll">
+                    Book a Session
+                </a>
+</div>
+<!-- Mobile Menu Toggle (Decorative) -->
+<button className="md:hidden text-primary">
+<span className="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main className="pt-[100px]">
+<!-- Hero Section -->
 <section className="relative min-h-[819px] flex items-center justify-center px-margin-mobile md:px-margin-desktop py-24 overflow-hidden">
-{/* Background Image */}
+<!-- Background Image -->
 <div className="absolute inset-0 z-0">
-<div className="bg-cover bg-center w-full h-full opacity-40 mix-blend-multiply filter grayscale-[30%]" data-alt="A serene, minimalist wellness space bathed in soft, diffused morning light. The room features natural materials like light oak wood, smooth concrete, and subtle touches of brass. A large window lets in ethereal, high-key white light, casting gentle, elongated shadows across a pristine white floor. The aesthetic is modern-luxury, evoking profound calm, professional authority, and deep mental clarity. The color palette focuses on whites, soft creams, and muted sages." style={{ backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuDFoMDHZg17sli9MZEdtoC1lxoL5Q5bGqzZG343A3U-zMFCZ5_SrxXnK5DQh19iK4_8ewq57878QaO07_Ke3AppwNDp4pAeHiO6uM7YYFRaPNnckYa7asV76tsZNjXPrqmHQQ36zhv0duHfmb7v_eZSN0QCMxPCGmDd026SWee_31EwqG2B961JSd1LaM6dc2Mljcto5D8cCjyHQv22xeKj8WMSZMWWsoDWm-pSZeuVyCdWsPuoykNXkTrkcAxRTg9fcs3DzqL2NtRx')` }}></div>
-{/* Gradient Overlay for readability */}
+<div className="bg-cover bg-center w-full h-full opacity-40 mix-blend-multiply filter grayscale-[30%]" data-alt="A serene, minimalist wellness space bathed in soft, diffused morning light. The room features natural materials like light oak wood, smooth concrete, and subtle touches of brass. A large window lets in ethereal, high-key white light, casting gentle, elongated shadows across a pristine white floor. The aesthetic is modern-luxury, evoking profound calm, professional authority, and deep mental clarity. The color palette focuses on whites, soft creams, and muted sages." style={{ backgroundImage: 'url('https://lh3.googleusercontent.com/aida-public/AB6AXuDFoMDHZg17sli9MZEdtoC1lxoL5Q5bGqzZG343A3U-zMFCZ5_SrxXnK5DQh19iK4_8ewq57878QaO07_Ke3AppwNDp4pAeHiO6uM7YYFRaPNnckYa7asV76tsZNjXPrqmHQQ36zhv0duHfmb7v_eZSN0QCMxPCGmDd026SWee_31EwqG2B961JSd1LaM6dc2Mljcto5D8cCjyHQv22xeKj8WMSZMWWsoDWm-pSZeuVyCdWsPuoykNXkTrkcAxRTg9fcs3DzqL2NtRx')' }}></div>
+<!-- Gradient Overlay for readability -->
 <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/80 to-background"></div>
 </div>
 <div className="relative z-10 max-w-[800px] text-center fade-in-up">
@@ -32,7 +59,7 @@ export default function Page() {
 </div>
 </div>
 </section>
- Stats / Accreditation Highlight 
+<!-- Stats / Accreditation Highlight -->
 <section className="py-16 bg-surface-cream border-y border-secondary-fixed">
 <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
 <div className="grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-secondary-fixed/50">
@@ -55,7 +82,7 @@ export default function Page() {
 </div>
 </div>
 </section>
- Course Catalog (Bento Grid) 
+<!-- Course Catalog (Bento Grid) -->
 <section className="py-24 md:py-32 px-margin-mobile md:px-margin-desktop bg-background" id="catalog">
 <div className="max-w-container-max mx-auto">
 <div className="flex flex-col md:flex-row justify-between items-end mb-16 fade-in-up">
@@ -69,12 +96,12 @@ export default function Page() {
 </span>
 </div>
 </div>
-{/* Bento Grid */}
+<!-- Bento Grid -->
 <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter auto-rows-[minmax(180px,auto)]">
-{/* Featured Course (Large) */}
+<!-- Featured Course (Large) -->
 <article className="md:col-span-8 md:row-span-2 group relative bg-surface-cream rounded-xl border border-secondary-fixed overflow-hidden flex flex-col justify-end p-8 fade-in-up cursor-pointer transition-transform hover:-translate-y-1 duration-300">
 <div className="absolute inset-0 z-0">
-<div className="bg-cover bg-center w-full h-full opacity-60 transition-transform duration-700 group-hover:scale-105 filter saturate-50 group-hover:saturate-100" data-alt="A macro photograph of two hands gently holding a small, smooth river stone. The lighting is soft and warm, highlighting the texture of the skin and the stone. The background is a beautifully blurred, muted sage green. The image conveys themes of support, engagement, trust, and profound emotional holding, aligning with a premium, quiet wellness aesthetic." style={{ backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuD_mARLc8B7A5rCNIMy1dq2ANzv-eqIIx5AxhBsQ58v0BPL65d10iz88d2TOSjJK5j8bIMSTg8yjP0KHL60JvNjxHviRh12esfJtuRtJdCh-5VZLc6mA64gNL4ZQdrjor8AYTtSEKEysZ9hwmeVZmJd4r395eY5gh1_AV3v_zuWI7rYWzyqNFQkji2sj54k-c1_uM1iB5WSGOc_fBI_7by002W9xiWpf63nCJDjgY5LSqb8nTUowD9qQtA6jeZOxd6ucEjJmbimx-Un')` }}></div>
+<div className="bg-cover bg-center w-full h-full opacity-60 transition-transform duration-700 group-hover:scale-105 filter saturate-50 group-hover:saturate-100" data-alt="A macro photograph of two hands gently holding a small, smooth river stone. The lighting is soft and warm, highlighting the texture of the skin and the stone. The background is a beautifully blurred, muted sage green. The image conveys themes of support, engagement, trust, and profound emotional holding, aligning with a premium, quiet wellness aesthetic." style={{ backgroundImage: 'url('https://lh3.googleusercontent.com/aida-public/AB6AXuD_mARLc8B7A5rCNIMy1dq2ANzv-eqIIx5AxhBsQ58v0BPL65d10iz88d2TOSjJK5j8bIMSTg8yjP0KHL60JvNjxHviRh12esfJtuRtJdCh-5VZLc6mA64gNL4ZQdrjor8AYTtSEKEysZ9hwmeVZmJd4r395eY5gh1_AV3v_zuWI7rYWzyqNFQkji2sj54k-c1_uM1iB5WSGOc_fBI_7by002W9xiWpf63nCJDjgY5LSqb8nTUowD9qQtA6jeZOxd6ucEjJmbimx-Un')' }}></div>
 <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent"></div>
 </div>
 <div className="relative z-10 mt-auto">
@@ -92,7 +119,7 @@ export default function Page() {
 </div>
 </div>
 </article>
-{/* Course 2 (Medium) */}
+<!-- Course 2 (Medium) -->
 <article className="md:col-span-4 md:row-span-1 bg-surface-cream rounded-xl border border-secondary-fixed p-8 flex flex-col fade-in-up" style={{ 'transition-delay': '100ms' }}>
 <div className="flex justify-between items-start mb-6">
 <span className="p-2 bg-healing-sage/10 rounded-lg text-healing-sage">
@@ -107,7 +134,7 @@ export default function Page() {
 <a className="text-primary hover:text-healing-sage transition-colors" href="#"><span className="material-symbols-outlined">arrow_outward</span></a>
 </div>
 </article>
-{/* Course 3 (Medium) */}
+<!-- Course 3 (Medium) -->
 <article className="md:col-span-4 md:row-span-1 bg-surface-container-low rounded-xl border border-secondary-fixed p-8 flex flex-col fade-in-up" style={{ 'transition-delay': '200ms' }}>
 <div className="flex justify-between items-start mb-6">
 <span className="p-2 bg-tertiary-fixed/30 rounded-lg text-on-tertiary-fixed-variant">
@@ -125,7 +152,7 @@ export default function Page() {
 </div>
 </div>
 </section>
- Deep Dive / Value Prop Section 
+<!-- Deep Dive / Value Prop Section -->
 <section className="py-24 px-margin-mobile md:px-margin-desktop bg-surface-cream relative overflow-hidden">
 <div className="max-w-container-max mx-auto relative z-10">
 <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
@@ -161,12 +188,12 @@ export default function Page() {
 </ul>
 </div>
 <div className="relative h-[600px] w-full rounded-2xl overflow-hidden fade-in-up" style={{ 'transition-delay': '200ms' }}>
-<div className="bg-cover bg-center w-full h-full" data-alt="An abstract, architectural interior shot of a modern wellness retreat. Soft, diffused daylight spills across curved, sand-colored walls and a minimalist wooden bench. The space is vast, quiet, and devoid of clutter. The high-key lighting creates a sense of ethereal lightness, professional calm, and spaciousness. The color palette is restricted to creamy whites, soft beiges, and muted architectural grays." style={{ backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuBCKdDs_7KkuXDqj9YFR2yyLjuKUxuCowMqj4hzsbdIrB3NpMXmzYTfuC1EAiKM57HRtcZ6gMyBeg8BHZ91wDTY_pJg-cE5JEPxQlup6kJwRYwWBVBr6P_yseQAA16LEWff_fO8f_VRMeMsG14knh0EjyLmjpJE6v9qVN-f2CSzxAL-rSVz74u3TZIRtYJVpYBHQlOqmcRuWnIpKCojOjCQmrSEuGo6AZAqVPY4cmiG5Cg6Dh5LRlSh3Cw2gLDsjg72j2jsg6fgV8mT')` }}></div>
+<div className="bg-cover bg-center w-full h-full" data-alt="An abstract, architectural interior shot of a modern wellness retreat. Soft, diffused daylight spills across curved, sand-colored walls and a minimalist wooden bench. The space is vast, quiet, and devoid of clutter. The high-key lighting creates a sense of ethereal lightness, professional calm, and spaciousness. The color palette is restricted to creamy whites, soft beiges, and muted architectural grays." style={{ backgroundImage: 'url('https://lh3.googleusercontent.com/aida-public/AB6AXuBCKdDs_7KkuXDqj9YFR2yyLjuKUxuCowMqj4hzsbdIrB3NpMXmzYTfuC1EAiKM57HRtcZ6gMyBeg8BHZ91wDTY_pJg-cE5JEPxQlup6kJwRYwWBVBr6P_yseQAA16LEWff_fO8f_VRMeMsG14knh0EjyLmjpJE6v9qVN-f2CSzxAL-rSVz74u3TZIRtYJVpYBHQlOqmcRuWnIpKCojOjCQmrSEuGo6AZAqVPY4cmiG5Cg6Dh5LRlSh3Cw2gLDsjg72j2jsg6fgV8mT')' }}></div>
 </div>
 </div>
 </div>
 </section>
- Testimonials 
+<!-- Testimonials -->
 <section className="py-24 px-margin-mobile md:px-margin-desktop bg-background">
 <div className="max-w-container-max mx-auto">
 <div className="text-center mb-16 fade-in-up">
@@ -174,7 +201,7 @@ export default function Page() {
 <p className="font-body-md text-body-md text-on-surface-variant">Feedback from participating professionals.</p>
 </div>
 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-{/* Testimonial 1 */}
+<!-- Testimonial 1 -->
 <div className="bg-surface-cream p-8 border border-secondary-fixed rounded-xl fade-in-up">
 <div className="text-healing-sage mb-6">
 <span className="material-symbols-outlined fill text-[32px]">format_quote</span>
@@ -190,7 +217,7 @@ export default function Page() {
 </div>
 </div>
 </div>
-{/* Testimonial 2 */}
+<!-- Testimonial 2 -->
 <div className="bg-surface-cream p-8 border border-secondary-fixed rounded-xl fade-in-up" style={{ 'transition-delay': '100ms' }}>
 <div className="text-healing-sage mb-6">
 <span className="material-symbols-outlined fill text-[32px]">format_quote</span>
@@ -206,7 +233,7 @@ export default function Page() {
 </div>
 </div>
 </div>
-{/* Testimonial 3 */}
+<!-- Testimonial 3 -->
 <div className="bg-surface-cream p-8 border border-secondary-fixed rounded-xl fade-in-up" style={{ 'transition-delay': '200ms' }}>
 <div className="text-healing-sage mb-6">
 <span className="material-symbols-outlined fill text-[32px]">format_quote</span>
@@ -225,10 +252,10 @@ export default function Page() {
 </div>
 </div>
 </section>
- Final CTA 
+<!-- Final CTA -->
 <section className="py-32 px-margin-mobile md:px-margin-desktop bg-primary text-on-primary text-center relative overflow-hidden" id="enroll">
-{/* Subtle background pattern */}
-<div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '32px 32px' }}></div>
+<!-- Subtle background pattern -->
+<div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', 'background-size': '32px 32px' }}></div>
 <div className="max-w-[700px] mx-auto relative z-10 fade-in-up">
 <h2 className="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg mb-6">
                     Advance Your Practice
@@ -246,7 +273,69 @@ export default function Page() {
                 </div>
 </div>
 </section>
+</main>
+ Footer 
+<footer className="w-full pt-20 pb-10 bg-surface dark:bg-primary-container bg-surface-cream border-t border-secondary-container">
+<div className="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div className="col-span-1 md:col-span-1 mb-10 md:mb-0">
+<div className="font-headline-lg text-headline-lg text-primary dark:text-primary-fixed-dim mb-6">
+                    Transcendental Healing
+                </div>
+<p className="font-body-md text-body-md text-secondary dark:text-on-secondary-container mb-6 max-w-[250px]">
+                    A sanctuary for profound healing and professional growth.
+                </p>
+</div>
+<div className="col-span-1 md:col-span-2 grid grid-cols-2 gap-8">
+<div>
+<h4 className="font-label-lg text-label-lg text-primary mb-4 uppercase tracking-wider">Services</h4>
+<ul className="space-y-3 font-body-md text-body-md">
+<li><a className="text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="#">Addiction Recovery</a></li>
+<li><a className="text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="#">Ayurvedic Healing</a></li>
+<li><a className="text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="#">Reflexology</a></li>
+<li><a className="text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="#">Yoga &amp; Breathwork</a></li>
+<li><a className="text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="#">Tarot</a></li>
+</ul>
+</div>
+<div>
+<h4 className="font-label-lg text-label-lg text-primary mb-4 uppercase tracking-wider">Education</h4>
+<ul className="space-y-3 font-body-md text-body-md">
+<li><a className="text-primary dark:text-primary-fixed-dim font-semibold focus:outline-none focus:ring-1 focus:ring-healing-sage" href="#">Professional Training</a></li>
+<li><a className="text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="#">Newsletter Signup</a></li>
+</ul>
+</div>
+</div>
+<div className="col-span-1 mt-10 md:mt-0">
+<p className="font-body-md text-body-md text-secondary dark:text-on-secondary-container mt-auto md:text-right">
+                    © 2024 Transcendental Healing. All Rights Reserved.
+                </p>
+</div>
+</div>
+</footer>
+<script>
+        // Simple Intersection Observer for fade-in animations
+        document.addEventListener("DOMContentLoaded", () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
 
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target); // Only animate once
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in-up').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+
+      {/* END RAW HTML IMPORT */}
     </>
   );
 }

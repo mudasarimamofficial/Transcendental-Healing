@@ -1,145 +1,228 @@
-import Image from "next/image";
 import Link from "next/link";
-
+// PIXEL PERFECT ROLLBACK PAGE
 export default function Page() {
   return (
     <>
+      {/* START RAW HTML IMPORT */}
       
- Hero Section 
-<section className="py-24 md:py-32 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row items-center gap-16">
-<div className="md:w-1/2 space-y-8">
-<h1 className="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary">
-                    Bridging Clinical Science &amp; Ancestral Soul
-                </h1>
-<p className="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
-                    Discover the journey of Jacquelyn, where profound lived experience meets rigorous professional expertise to create a sanctuary for true healing.
+ Top Navigation Bar 
+<nav className="fixed top-0 w-full z-50 bg-surface-cream/80 backdrop-blur-md dark:bg-primary/80 bg-surface-cream/90 border-b border-secondary-container/30">
+<div className="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<!-- Brand -->
+<a className="font-headline-md text-headline-md font-medium tracking-tight text-primary dark:text-primary-fixed-dim focus:outline-none focus:ring-1 focus:ring-healing-sage rounded-sm" href="#">
+                Transcendental Healing
+            </a>
+<!-- Desktop Navigation -->
+<div className="hidden md:flex items-center space-x-8">
+<a aria-current="page" className="font-label-lg text-label-lg text-primary dark:text-primary-fixed-dim border-b-2 border-healing-sage pb-1 opacity-80 transition-opacity duration-200" href="#">Home</a>
+<a className="font-label-lg text-label-lg text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300" href="#">About</a>
+<a className="font-label-lg text-label-lg text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300" href="#">Services</a>
+<a className="font-label-lg text-label-lg text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300" href="#">Education</a>
+<a className="font-label-lg text-label-lg text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300" href="#">Podcast</a>
+<a className="font-label-lg text-label-lg text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300" href="#">Resources</a>
+</div>
+<!-- CTA -->
+<div className="hidden md:flex">
+<a className="inline-flex items-center justify-center px-8 py-3 bg-primary text-surface-cream font-label-lg text-label-lg rounded-full hover:bg-ether-indigo-light transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2" href="#">
+                    Book a Session
+                </a>
+</div>
+<!-- Mobile Menu Toggle -->
+<button aria-label="Open Menu" className="md:hidden text-primary focus:outline-none p-2">
+<span className="material-symbols-outlined" style={{ fontVariationSettings: ''FILL' 0' }}>menu</span>
+</button>
+</div>
+</nav>
+<main className="pt-[88px]">
+<!-- Hero Section -->
+<section className="relative min-h-[921px] flex items-center bg-surface-cream overflow-hidden">
+<div className="absolute inset-0 w-full h-full z-0">
+<div className="bg-cover bg-center w-full h-full opacity-30 mix-blend-multiply" data-alt="A serene, high-end wellness sanctuary space. Natural light streams through large windows, illuminating a minimalist interior with soft beige tones, natural wood textures, and touches of sage green foliage. The atmosphere is profoundly calm, inviting, and clinically pristine yet deeply human. The lighting is soft and ethereal, emphasizing healing and tranquility." style={{ backgroundImage: 'url('https://lh3.googleusercontent.com/aida-public/AB6AXuAuJXa-xIRp0sY3p2YoHPqEkVU7Vcb418Yy3B2gB9vWbh8hOjPHuBcsgYX3AOQU3kAX0Bx0PDt6PTx54D0--pL4H1hJdEXUZvtou8PN4aARa69gnu-Sq_uugSVeqeGacOvndQQKPhSTeSjleRQa65TTNMrniWojvPVwZQBaZJULuuSgdoPKTiqrbQAL5P4763Mi3AdgIRLhsoNlOmMpAok6gWQy7nuktfsmS-Gi84I72G2_Lzzi7W4boksYkM0ZG_GVfslVt0XDShFF')' }}></div>
+<div className="absolute inset-0 bg-gradient-to-r from-surface-cream via-surface-cream/80 to-transparent"></div>
+</div>
+<div className="relative z-10 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-20 md:py-32">
+<div className="max-w-3xl space-y-8">
+<div className="inline-flex items-center space-x-2 bg-secondary-container/50 px-4 py-2 rounded-full backdrop-blur-sm">
+<span className="material-symbols-outlined text-healing-sage text-sm" style={{ fontVariationSettings: ''FILL' 1' }}>verified</span>
+<span className="font-label-sm text-label-sm text-on-secondary-container">OASAS Approved Provider · Decades of Clinical Expertise</span>
+</div>
+<h1 className="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-primary text-balance">
+                        The Intersection of Clinical Science and Ancestral Soul.
+                    </h1>
+<p className="font-body-lg text-body-lg text-secondary max-w-2xl text-balance">
+                        A sanctuary for profound self-discovery and holistic addiction recovery, designed for every body and every journey.
+                    </p>
+<div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-6 pt-4">
+<a className="inline-flex items-center justify-center px-8 py-4 bg-primary text-surface-cream font-label-lg text-label-lg rounded-full hover:bg-ether-indigo-light transition-all duration-300 w-full sm:w-auto text-center shadow-sm hover:shadow-md" href="#">
+                            Book Your Discovery Session
+                        </a>
+<a className="inline-flex items-center justify-center px-8 py-4 border border-secondary text-primary font-label-lg text-label-lg rounded-full hover:bg-secondary-container/30 transition-all duration-300 w-full sm:w-auto text-center" href="#">
+                            Explore Services
+                        </a>
+</div>
+</div>
+</div>
+</section>
+<!-- The Path (Transformation Section) -->
+<section className="py-24 md:py-32 bg-background">
+<div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div className="text-center mb-16 space-y-4">
+<h2 className="font-headline-lg text-headline-lg text-primary">Your Journey: From Overwhelmed to Empowered</h2>
+<p className="font-body-md text-body-md text-secondary max-w-2xl mx-auto">We honor your unique path. Our framework is designed to move you steadily toward clarity and deep healing.</p>
+</div>
+<div className="relative">
+<!-- Connecting Line -->
+<div className="hidden md:block absolute top-1/2 left-0 w-full h-[1px] bg-secondary-container -translate-y-1/2 z-0"></div>
+<div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8 relative z-10">
+<!-- Step 1 -->
+<div className="flex flex-col items-center text-center space-y-6">
+<div className="w-20 h-20 rounded-full bg-surface-cream border border-secondary-container flex items-center justify-center shadow-sm">
+<span className="material-symbols-outlined text-healing-sage text-3xl" style={{ fontVariationSettings: ''FILL' 0' }}>self_improvement</span>
+</div>
+<div>
+<h3 className="font-headline-md text-headline-md text-primary text-xl mb-2">Grounding</h3>
+<p className="font-body-md text-body-md text-secondary text-sm">Establishing a safe, stable foundation for the work ahead.</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div className="flex flex-col items-center text-center space-y-6">
+<div className="w-20 h-20 rounded-full bg-surface-cream border border-secondary-container flex items-center justify-center shadow-sm">
+<span className="material-symbols-outlined text-healing-sage text-3xl" style={{ fontVariationSettings: ''FILL' 0' }}>spa</span>
+</div>
+<div>
+<h3 className="font-headline-md text-headline-md text-primary text-xl mb-2">Exploration</h3>
+<p className="font-body-md text-body-md text-secondary text-sm">Compassionately investigating the roots of unease.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div className="flex flex-col items-center text-center space-y-6">
+<div className="w-20 h-20 rounded-full bg-surface-cream border border-secondary-container flex items-center justify-center shadow-sm">
+<span className="material-symbols-outlined text-healing-sage text-3xl" style={{ fontVariationSettings: ''FILL' 0' }}>psychiatry</span>
+</div>
+<div>
+<h3 className="font-headline-md text-headline-md text-primary text-xl mb-2">Integration</h3>
+<p className="font-body-md text-body-md text-secondary text-sm">Weaving clinical insight with holistic practices.</p>
+</div>
+</div>
+<!-- Step 4 -->
+<div className="flex flex-col items-center text-center space-y-6">
+<div className="w-20 h-20 rounded-full bg-surface-cream border border-secondary-container flex items-center justify-center shadow-sm">
+<span className="material-symbols-outlined text-healing-sage text-3xl" style={{ fontVariationSettings: ''FILL' 0' }}>brightness_5</span>
+</div>
+<div>
+<h3 className="font-headline-md text-headline-md text-primary text-xl mb-2">Empowerment</h3>
+<p className="font-body-md text-body-md text-secondary text-sm">Stepping into profound, sustained self-mastery.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Service Pillars (Bento Grid) -->
+<section className="py-24 md:py-32 bg-surface-cream">
+<div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div className="mb-16">
+<h2 className="font-headline-lg text-headline-lg text-primary mb-4">Our Service Pillars</h2>
+<p className="font-body-lg text-body-lg text-secondary max-w-2xl">A comprehensive approach addressing the mind, the body, and the spirit.</p>
+</div>
+<div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[400px]">
+<!-- Clinical Recovery -->
+<a className="group relative bg-background border border-secondary-container rounded-2xl overflow-hidden flex flex-col p-8 transition-transform duration-300 hover:-translate-y-1" href="#">
+<div className="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+<span className="material-symbols-outlined text-8xl text-primary" style={{ fontVariationSettings: ''FILL' 0' }}>health_metrics</span>
+</div>
+<div className="relative z-10 flex-grow">
+<span className="inline-block px-3 py-1 bg-primary/5 text-primary font-label-sm text-label-sm rounded-full mb-6">Clinical</span>
+<h3 className="font-headline-md text-headline-md text-primary mb-4">Addiction Support &amp; Therapy</h3>
+<p className="font-body-md text-body-md text-secondary">Evidence-based clinical recovery modalities, trauma-informed care, and sustained support systems.</p>
+</div>
+<div className="relative z-10 flex items-center text-primary font-label-lg text-label-lg group-hover:text-healing-sage transition-colors">
+                            Explore Clinical Care
+                            <span className="material-symbols-outlined ml-2 text-sm" style={{ fontVariationSettings: ''FILL' 0' }}>arrow_forward</span>
+</div>
+</a>
+<!-- Sacred Healing -->
+<a className="group relative bg-background border border-secondary-container rounded-2xl overflow-hidden flex flex-col p-8 transition-transform duration-300 hover:-translate-y-1" href="#">
+<div className="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+<span className="material-symbols-outlined text-8xl text-primary" style={{ fontVariationSettings: ''FILL' 0' }}>vital_signs</span>
+</div>
+<div className="relative z-10 flex-grow">
+<span className="inline-block px-3 py-1 bg-healing-sage/10 text-healing-sage font-label-sm text-label-sm rounded-full mb-6">Holistic</span>
+<h3 className="font-headline-md text-headline-md text-primary mb-4">Ayurveda &amp; Reflexology</h3>
+<p className="font-body-md text-body-md text-secondary">Ancient bodily practices to restore physical balance, clear energy blockages, and promote cellular healing.</p>
+</div>
+<div className="relative z-10 flex items-center text-primary font-label-lg text-label-lg group-hover:text-healing-sage transition-colors">
+                            Explore Healing Arts
+                            <span className="material-symbols-outlined ml-2 text-sm" style={{ fontVariationSettings: ''FILL' 0' }}>arrow_forward</span>
+</div>
+</a>
+<!-- Spiritual Insights -->
+<a className="group relative bg-background border border-secondary-container rounded-2xl overflow-hidden flex flex-col p-8 transition-transform duration-300 hover:-translate-y-1" href="#">
+<div className="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+<span className="material-symbols-outlined text-8xl text-primary" style={{ fontVariationSettings: ''FILL' 0' }}>auto_awesome</span>
+</div>
+<div className="relative z-10 flex-grow">
+<span className="inline-block px-3 py-1 bg-on-tertiary-container/10 text-on-tertiary-container font-label-sm text-label-sm rounded-full mb-6">Spiritual</span>
+<h3 className="font-headline-md text-headline-md text-primary mb-4">Tarot &amp; Deep Insights</h3>
+<p className="font-body-md text-body-md text-secondary">Intuitive guidance sessions to help you navigate life's crossroads with clarity and profound inner wisdom.</p>
+</div>
+<div className="relative z-10 flex items-center text-primary font-label-lg text-label-lg group-hover:text-healing-sage transition-colors">
+                            Explore Spiritual Guidance
+                            <span className="material-symbols-outlined ml-2 text-sm" style={{ fontVariationSettings: ''FILL' 0' }}>arrow_forward</span>
+</div>
+</a>
+</div>
+</div>
+</section>
+</main>
+ Footer 
+<footer className="bg-surface dark:bg-primary-container w-full pt-20 pb-10 bg-surface-cream border-t border-secondary-container">
+<div className="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<!-- Brand Column -->
+<div className="col-span-1 md:col-span-1 space-y-6">
+<div className="font-headline-lg text-headline-lg text-primary dark:text-primary-fixed-dim">
+                    Transcendental Healing
+                </div>
+<p className="font-body-md text-body-md text-secondary dark:text-on-secondary-container text-sm">
+                    A sanctuary for profound self-discovery and holistic recovery.
                 </p>
-<div className="h-px w-24 bg-tertiary-fixed-dim"></div>
 </div>
-<div className="md:w-1/2 relative w-full aspect-[3/4] md:aspect-square overflow-hidden rounded-xl">
-<Image fill className="object-cover w-full h-full" data-alt="A highly professional and serene portrait of a distinguished transgender woman therapist, Jacquelyn, standing in a brightly lit, modern luxury wellness sanctuary. She exudes warmth and profound wisdom, wearing elegant, understated clothing in muted earth tones. The lighting is soft and high-key, illuminating the minimalist space featuring subtle natural elements like sage green accents and smooth pale stone textures, aligning with a light-mode ethereal aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYmDEoqHR1wAw6YwfbNhuU6TerkLJSfa3DTxwRpgByfogdh5on5L4VY0FtuOcGayuziCibfPj78YA7ixI8-hwzJihdalOYff2IgbigIJ_9C1kk8iBWZKVlQy4TGRoy1kNo7Dqo7J_mPB9U1ndc5oQf0jJCmqm76U8yl5RSu8gckJY6TPpCAgQ2l7hBBqDHxYTbkj_MS4ErJ8UzgzLdB6zqu6Ij5wYKjd1b6LvhYJLiAc1mrciLXxvDLgNrZ4tpMMbWlq-Ovf6Fraia"/>
-<div className="absolute inset-0 bg-primary/5"></div>
-</div>
-</section>
- Founder Story 
-<section className="bg-surface-cream py-24 md:py-32 px-margin-mobile md:px-margin-desktop">
-<div className="max-w-container-max mx-auto grid md:grid-cols-12 gap-12">
-<div className="md:col-span-4">
-<h2 className="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary sticky top-32">
-                        The Founder's Journey
-                    </h2>
-</div>
-<div className="md:col-span-8 space-y-8 font-body-lg text-body-lg text-on-surface-variant">
-<p>
-                        My path to healing was forged through the fires of personal transformation. As a transgender woman navigating the complex intersections of identity, societal expectations, and the profound need for authentic embodiment, I learned early that true healing requires more than treating symptoms—it requires a safe harbor for the soul.
-                    </p>
-<p>
-                        For years, I sought solace in places that often felt sterile and disconnected from the deeper spiritual and emotional realities of lived experience. This propelled me to become an addiction therapist, determined to offer the compassionate, deeply resonant care I once searched for.
-                    </p>
-<p>
-                        Through my journey as an author and practitioner, I realized that clinical science provides the framework, but ancestral wisdom provides the breath. By integrating these modalities, I aim to create spaces where every individual, regardless of their path, feels seen, honored, and fundamentally safe.
-                    </p>
-</div>
-</div>
-</section>
- Pillars Section (Bento Grid Style) 
-<section className="py-24 md:py-32 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-<div className="text-center mb-16">
-<span className="font-label-lg text-label-lg text-healing-sage uppercase tracking-widest">Our Foundation</span>
-<h2 className="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mt-4">The Pillars of Practice</h2>
-</div>
-<div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-{/* Pillar 1 */}
-<div className="bg-surface-cream rounded-xl p-10 border border-secondary-container hover:shadow-2xl transition-shadow duration-500 flex flex-col items-start group">
-<div className="w-16 h-16 rounded-full bg-surface-bright flex items-center justify-center mb-8 border border-secondary-container group-hover:border-tertiary-fixed-dim transition-colors">
-<span className="material-symbols-outlined text-primary" style={{ fontSize: '32px', fontVariationSettings: `"FILL" 0` }}>psychology</span>
-</div>
-<h3 className="font-headline-md text-headline-md text-primary mb-4">Clinical Expertise</h3>
-<p className="font-body-md text-body-md text-on-surface-variant flex-grow">
-                        Grounded in rigorous evidence-based practices as an OASAS Provider, delivering structured, safe, and professional therapeutic interventions for sustainable recovery.
-                    </p>
-</div>
-{/* Pillar 2 */}
-<div className="bg-primary text-on-primary rounded-xl p-10 shadow-lg flex flex-col items-start relative overflow-hidden">
-<div className="absolute -top-24 -right-24 w-64 h-64 bg-ether-indigo-light rounded-full blur-3xl opacity-50"></div>
-<div className="w-16 h-16 rounded-full bg-primary-container flex items-center justify-center mb-8 border border-ether-indigo-light relative z-10">
-<span className="material-symbols-outlined text-tertiary-fixed-dim" style={{ fontSize: '32px', fontVariationSettings: `"FILL" 1` }}>spa</span>
-</div>
-<h3 className="font-headline-md text-headline-md text-surface-bright mb-4 relative z-10">Spiritual Wisdom</h3>
-<p className="font-body-md text-body-md text-primary-fixed-dim flex-grow relative z-10">
-                        Integrating ancient traditions like Ayurveda and Tarot to address the energetic and spiritual imbalances, fostering holistic alignment of mind, body, and spirit.
-                    </p>
-</div>
-{/* Pillar 3 */}
-<div className="bg-surface-cream rounded-xl p-10 border border-secondary-container hover:shadow-2xl transition-shadow duration-500 flex flex-col items-start group">
-<div className="w-16 h-16 rounded-full bg-surface-bright flex items-center justify-center mb-8 border border-secondary-container group-hover:border-tertiary-fixed-dim transition-colors">
-<span className="material-symbols-outlined text-primary" style={{ fontSize: '32px', fontVariationSettings: `"FILL" 0` }}>diversity_1</span>
-</div>
-<h3 className="font-headline-md text-headline-md text-primary mb-4">Inclusive Advocacy</h3>
-<p className="font-body-md text-body-md text-on-surface-variant flex-grow">
-                        A fierce commitment to creating affirming spaces focusing on Body Positivity and LGBTQ+ advocacy, ensuring every lived experience is validated and celebrated.
-                    </p>
-</div>
-</div>
-</section>
- Credentials & Publications 
-<section className="py-24 md:py-32 bg-surface border-y border-surface-container-high">
-<div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid md:grid-cols-2 gap-16 items-center">
-<div>
-<h2 className="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-8">Professional Standing</h2>
-<ul className="space-y-6">
-<li className="flex items-start">
-<span className="material-symbols-outlined text-tertiary-fixed-dim mr-4 mt-1" style={{ fontVariationSettings: `"FILL" 1` }}>verified</span>
-<div>
-<span className="block font-label-lg text-label-lg text-primary">OASAS-Approved Education Provider</span>
-<span className="block font-body-md text-body-md text-on-surface-variant mt-1">Provider ID: #1158</span>
-</div>
-</li>
-<li className="flex items-start">
-<span className="material-symbols-outlined text-tertiary-fixed-dim mr-4 mt-1" style={{ fontVariationSettings: `"FILL" 1` }}>handshake</span>
-<div>
-<span className="block font-label-lg text-label-lg text-primary">NCADD Partnerships</span>
-<span className="block font-body-md text-body-md text-on-surface-variant mt-1">Collaborating for excellence in addiction treatment.</span>
-</div>
-</li>
-<li className="flex items-start">
-<span className="material-symbols-outlined text-tertiary-fixed-dim mr-4 mt-1" style={{ fontVariationSettings: `"FILL" 1` }}>menu_book</span>
-<div>
-<span className="block font-label-lg text-label-lg text-primary">Published Author</span>
-<span className="block font-body-md text-body-md text-on-surface-variant mt-1">Author of 5 acclaimed books bridging therapy and spirituality.</span>
-</div>
-</li>
+<!-- Links Column 1 -->
+<div className="col-span-1 md:col-span-1">
+<h4 className="font-label-lg text-label-lg text-primary mb-4">Services</h4>
+<ul className="space-y-3 font-body-md text-body-md text-secondary dark:text-on-secondary-container">
+<li><a className="hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage rounded-sm" href="#">Addiction Recovery</a></li>
+<li><a className="hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage rounded-sm" href="#">Ayurvedic Healing</a></li>
+<li><a className="hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage rounded-sm" href="#">Reflexology</a></li>
 </ul>
 </div>
-<div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-[0_20px_40px_-15px_rgba(3,7,28,0.1)]">
-<Image fill className="object-cover w-full h-full" data-alt="A beautifully styled flat lay on a warm, pale sandstone surface. The composition includes several elegantly bound books authored by Jacquelyn, interspersed with subtle clinical and spiritual items: a minimalist stethoscope, a small bundle of dried sage, and a muted gold tarot card. Soft, diffused daylight filters across the arrangement, highlighting the premium, serene luxury aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDER5J4D97JXoDLhv6dqO_g0u8Jsj6eTEhjuG4SdU5zIVJDO7FvbG9HyDop1e8os2Jb5g55_HXjvlFONf9y_MHEJI9YdJt-g3oL241s7c2yxgoiqKGatOPxRICNZJP9znkeHrul_JXhVNyYrTZjo-ZmG8p5aejChIFX8KEGkh8oB_7DPMg0uxvnNYnPyRwhXxM-ad_sTrq-JVCdKVcHMg3HzO1jXGaDlhB6ygExF5mJ5lSuDScKkQx7_crQyxVuEmZud6Kk3vdgAljj"/>
+<!-- Links Column 2 -->
+<div className="col-span-1 md:col-span-1">
+<h4 className="font-label-lg text-label-lg text-primary mb-4">Practice</h4>
+<ul className="space-y-3 font-body-md text-body-md text-secondary dark:text-on-secondary-container">
+<li><a className="hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage rounded-sm" href="#">Yoga &amp; Breathwork</a></li>
+<li><a className="hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage rounded-sm" href="#">Tarot</a></li>
+<li><a className="hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage rounded-sm" href="#">Professional Training</a></li>
+</ul>
+</div>
+<!-- Newsletter -->
+<div className="col-span-1 md:col-span-1">
+<h4 className="font-label-lg text-label-lg text-primary mb-4">Stay Connected</h4>
+<form className="space-y-3">
+<label className="sr-only" htmlFor="footer-email">Email address</label>
+<input className="w-full bg-background border border-secondary-container rounded-md px-4 py-2 font-body-md text-body-md focus:outline-none focus:border-healing-sage focus:ring-1 focus:ring-healing-sage placeholder-outline transition-colors" id="footer-email" placeholder="Email address" type="email"/>
+<button className="w-full bg-primary text-surface-cream font-label-lg text-label-lg py-2 rounded-md hover:bg-ether-indigo-light transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2" type="submit">
+                        Newsletter Signup
+                    </button>
+</form>
 </div>
 </div>
-</section>
- Mission/Vision 
-<section className="py-24 md:py-32 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center">
-<div className="max-w-3xl mx-auto space-y-12">
-<span className="material-symbols-outlined text-tertiary-fixed-dim opacity-50" style={{ fontSize: '48px' }}>flare</span>
-<div>
-<h2 className="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-6">Our Purpose &amp; The Sanctuary</h2>
-<p className="font-body-lg text-body-lg text-on-surface-variant">
-                        Our purpose is to illuminate the path to profound healing by recognizing the wholeness of every individual. The Sanctuary is not merely a clinical setting; it is a meticulously curated space of emotional safety and quiet luxury, where the noise of the world falls away, allowing the truest self to emerge and thrive.
-                    </p>
-</div>
-</div>
-</section>
- CTA 
-<section className="py-32 bg-primary text-on-primary text-center px-margin-mobile relative overflow-hidden">
-<div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMSIgZmlsbD0iI2ZmZiIgZmlsbC1vcGFjaXR5PSIwLjEiLz48L3N2Zz4=')]"></div>
-<div className="relative z-10 max-w-2xl mx-auto flex flex-col items-center">
-<h2 className="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-surface-bright mb-8">Begin Your Journey</h2>
-<p className="font-body-lg text-body-lg text-primary-fixed-dim mb-12">Take the first step towards integration and profound healing in a space designed for your emotional safety.</p>
-<button className="bg-surface-bright text-primary px-10 py-4 rounded-DEFAULT font-label-lg text-label-lg hover:bg-surface-dim transition-colors tracking-widest shadow-[0_10px_30px_-10px_rgba(255,255,255,0.2)]">
-                    SCHEDULE A CONSULTATION
-                </button>
-</div>
-</section>
+<div className="mt-16 pt-8 border-t border-secondary-container/50 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center font-body-md text-body-md text-secondary dark:text-on-secondary-container text-sm">
+            © 2024 Transcendental Healing. All Rights Reserved.
+        </div>
+</footer>
 
+      {/* END RAW HTML IMPORT */}
     </>
   );
 }

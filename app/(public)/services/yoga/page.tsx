@@ -1,13 +1,36 @@
 import Link from "next/link";
-
+// PIXEL PERFECT ROLLBACK PAGE
 export default function Page() {
   return (
     <>
+      {/* START RAW HTML IMPORT */}
       
- Hero Section 
+ Top Navigation Anchor 
+<nav className="fixed top-0 w-full z-50 bg-surface-cream/80 backdrop-blur-md border-b border-secondary-container/30">
+<div className="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<a className="font-headline-md text-headline-md font-medium tracking-tight text-primary" href="#">Transcendental Healing</a>
+<div className="hidden md:flex gap-8 items-center">
+<a className="font-label-lg text-label-lg text-on-secondary-container hover:text-healing-sage transition-colors duration-300" href="#">Home</a>
+<a className="font-label-lg text-label-lg text-on-secondary-container hover:text-healing-sage transition-colors duration-300" href="#">About</a>
+<a className="font-label-lg text-label-lg text-primary border-b-2 border-healing-sage pb-1 opacity-80 transition-opacity duration-200" href="#">Services</a>
+<a className="font-label-lg text-label-lg text-on-secondary-container hover:text-healing-sage transition-colors duration-300" href="#">Education</a>
+<a className="font-label-lg text-label-lg text-on-secondary-container hover:text-healing-sage transition-colors duration-300" href="#">Podcast</a>
+<a className="font-label-lg text-label-lg text-on-secondary-container hover:text-healing-sage transition-colors duration-300" href="#">Resources</a>
+</div>
+<button className="hidden md:flex bg-primary text-on-primary font-label-lg text-label-lg px-8 py-3 rounded-DEFAULT hover:bg-ether-indigo-light transition-colors duration-300">
+                Book a Session
+            </button>
+<!-- Mobile Menu Button -->
+<button className="md:hidden text-primary">
+<span className="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main className="pt-[100px]">
+<!-- Hero Section -->
 <section className="relative min-h-[819px] flex items-center px-margin-mobile md:px-margin-desktop">
 <div className="absolute inset-0 z-0">
-<div className="w-full h-full bg-cover bg-center" data-alt="A serene, high-quality, bright photograph showing an inclusive, plus-size yoga instructor in a peaceful, minimalist studio. Warm morning sunlight streams through large windows, illuminating natural wood floors and subtle sage green accents. The aesthetic is modern-luxury, evoking calm, safety, and empowerment." style={{ backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuDKGH0BrNs7dYRw_bB7cxJGsAx75fvfj40Gi0wt-pZtzBKGtCYHKU9oGhQdkjUwTVQQOpQUa9Cbo0hXrZ0RNk1cmhl4g7M3acRt2pAR78XSJBQcLaX4ejWFQYbooD8pKPHzPzA1XNInS-_AABn_Kws4dLo58c4lvUIFZHgdf-GymYzxcH3Opqj0SLK750h9SgpBxU5KO3fjtQ5U8wAe4JNchjPwK2A-qgeU5saWdFppgWQhvLfDQFXyr-0rPxeIuWSaT0ScVOqFwTtV')` }}></div>
+<div className="w-full h-full bg-cover bg-center" data-alt="A serene, high-quality, bright photograph showing an inclusive, plus-size yoga instructor in a peaceful, minimalist studio. Warm morning sunlight streams through large windows, illuminating natural wood floors and subtle sage green accents. The aesthetic is modern-luxury, evoking calm, safety, and empowerment." style={{ backgroundImage: 'url('https://lh3.googleusercontent.com/aida-public/AB6AXuDKGH0BrNs7dYRw_bB7cxJGsAx75fvfj40Gi0wt-pZtzBKGtCYHKU9oGhQdkjUwTVQQOpQUa9Cbo0hXrZ0RNk1cmhl4g7M3acRt2pAR78XSJBQcLaX4ejWFQYbooD8pKPHzPzA1XNInS-_AABn_Kws4dLo58c4lvUIFZHgdf-GymYzxcH3Opqj0SLK750h9SgpBxU5KO3fjtQ5U8wAe4JNchjPwK2A-qgeU5saWdFppgWQhvLfDQFXyr-0rPxeIuWSaT0ScVOqFwTtV')' }}></div>
 <div className="absolute inset-0 bg-surface-cream/70 backdrop-blur-sm md:bg-gradient-to-r md:from-surface-cream/95 md:via-surface-cream/80 md:to-transparent"></div>
 </div>
 <div className="relative z-10 max-w-container-max mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-gutter">
@@ -26,7 +49,7 @@ export default function Page() {
 </div>
 </div>
 </section>
- The Method / Philosophy Section (Bento Grid) 
+<!-- The Method / Philosophy Section (Bento Grid) -->
 <section className="py-24 px-margin-mobile md:px-margin-desktop bg-surface">
 <div className="max-w-container-max mx-auto">
 <div className="text-center mb-16 max-w-2xl mx-auto">
@@ -34,9 +57,9 @@ export default function Page() {
 <p className="font-body-md text-body-md text-secondary">A sanctuary for all bodies, prioritizing accessibility, emotional safety, and somatic healing over aesthetic perfection.</p>
 </div>
 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[300px]">
-{/* Bento Item 1: Large Feature */}
+<!-- Bento Item 1: Large Feature -->
 <div className="md:col-span-2 md:row-span-2 bg-surface-cream border border-secondary-container rounded-lg p-10 flex flex-col justify-end relative overflow-hidden group">
-<div className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Close up, high quality macro photography of a person's hands resting gently in a mudra on their knees during meditation. Soft natural light, muted tones of sage and cream. Focus on texture of the fabric and the skin, conveying a sense of profound stillness and mindful presence in a minimalist setting." style={{ backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuA9oYc4hidlmMNXPH4uO82EvVHSoOxpp_vO7M4WuhbPMuVhmPD0oCMhZDHhZx5OicPIIp2T7zTpAE9SwZM5UpIk28snbksvTNJOI_l9exIV7irWOXYwSXk5FMATxtBnlCWhrQr0mKKfYXgCb3WYT4VFl8x-njIqTyEhjSi5do6UvS0eev89HPouKdx2kzcpHYak77WKG2Kz6_Ktbfx_wen1zQPnEQUzOzjURHNuYMp-WYgePbtKfAgKvN3aR0i6TgaApk-rhUdphuop')` }}></div>
+<div className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Close up, high quality macro photography of a person's hands resting gently in a mudra on their knees during meditation. Soft natural light, muted tones of sage and cream. Focus on texture of the fabric and the skin, conveying a sense of profound stillness and mindful presence in a minimalist setting." style={{ backgroundImage: 'url('https://lh3.googleusercontent.com/aida-public/AB6AXuA9oYc4hidlmMNXPH4uO82EvVHSoOxpp_vO7M4WuhbPMuVhmPD0oCMhZDHhZx5OicPIIp2T7zTpAE9SwZM5UpIk28snbksvTNJOI_l9exIV7irWOXYwSXk5FMATxtBnlCWhrQr0mKKfYXgCb3WYT4VFl8x-njIqTyEhjSi5do6UvS0eev89HPouKdx2kzcpHYak77WKG2Kz6_Ktbfx_wen1zQPnEQUzOzjURHNuYMp-WYgePbtKfAgKvN3aR0i6TgaApk-rhUdphuop')' }}></div>
 <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent"></div>
 <div className="relative z-10">
 <span className="inline-flex items-center gap-2 bg-healing-sage/20 text-surface-cream font-label-sm text-label-sm px-3 py-1 rounded-full mb-4 backdrop-blur-md">
@@ -47,7 +70,7 @@ export default function Page() {
 <p className="font-body-md text-body-md text-surface-container-low max-w-md">Drawing from Jacquelyn's personal journey as a plus-size yogi, our practice dismantles traditional barriers. We focus on how the pose feels, not how it looks, creating a safe container for profound somatic exploration.</p>
 </div>
 </div>
-{/* Bento Item 2 */}
+<!-- Bento Item 2 -->
 <div className="bg-surface-cream border border-secondary-container rounded-lg p-8 flex flex-col items-start hover:shadow-[0_20px_40px_-15px_rgba(3,7,28,0.05)] transition-all duration-300">
 <div className="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center mb-6 text-primary">
 <span className="material-symbols-outlined">accessible_forward</span>
@@ -55,7 +78,7 @@ export default function Page() {
 <h4 className="font-headline-md text-headline-md text-primary mb-2">Accessibility First</h4>
 <p className="font-body-md text-body-md text-secondary">Props aren't crutches; they are tools for deeper exploration. Every session integrates modifications tailored to your unique anatomical needs.</p>
 </div>
-{/* Bento Item 3 */}
+<!-- Bento Item 3 -->
 <div className="bg-primary text-surface-cream rounded-lg p-8 flex flex-col items-start relative overflow-hidden">
 <div className="absolute -right-10 -bottom-10 opacity-10">
 <span className="material-symbols-outlined text-[120px] filled-icon">air</span>
@@ -69,7 +92,7 @@ export default function Page() {
 </div>
 </div>
 </section>
- Pillars of Practice 
+<!-- Pillars of Practice -->
 <section className="py-24 px-margin-mobile md:px-margin-desktop bg-surface-cream">
 <div className="max-w-container-max mx-auto">
 <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
@@ -79,27 +102,27 @@ export default function Page() {
 </div>
 </div>
 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-{/* Offering 1 */}
+<!-- Offering 1 -->
 <div className="group border border-secondary-container bg-surface p-8 rounded-lg hover:border-healing-sage transition-colors duration-300">
-<div className="h-48 mb-6 rounded bg-cover bg-center overflow-hidden" data-alt="A serene, high-quality photograph of an elegant, minimalist living room set up for a private yoga session. A premium yoga mat is laid out near a large window. Soft, warm lighting, muted natural tones, conveying a sense of exclusivity and personalized care in an in-home setting." style={{ backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuD9bIAJU9On56jYHA-J567XF-0GFMnf_2ChkAmpisY5A-L3F4uiYsgBaOaI2dJ693iIEESlY0l0AOB9Hwsov5ydm5DSEfoUHSnmNS_RtMwEae80t8CX2K_7bZ9-xt9GuCIQcN9vDpej-dKK24gaMVqz5quQ9kjaLxeSgF40RDKxGEUQ6SBiUADOeiGdD131VcEzWOKRE3ZPlUG7EYVBLuQvwlNPDeE-3gBrFvqbBNBy9onIagWo00BkMYN3SHgI_Q5C1KO7it4mfuoN')` }}></div>
+<div className="h-48 mb-6 rounded bg-cover bg-center overflow-hidden" data-alt="A serene, high-quality photograph of an elegant, minimalist living room set up for a private yoga session. A premium yoga mat is laid out near a large window. Soft, warm lighting, muted natural tones, conveying a sense of exclusivity and personalized care in an in-home setting." style={{ backgroundImage: 'url('https://lh3.googleusercontent.com/aida-public/AB6AXuD9bIAJU9On56jYHA-J567XF-0GFMnf_2ChkAmpisY5A-L3F4uiYsgBaOaI2dJ693iIEESlY0l0AOB9Hwsov5ydm5DSEfoUHSnmNS_RtMwEae80t8CX2K_7bZ9-xt9GuCIQcN9vDpej-dKK24gaMVqz5quQ9kjaLxeSgF40RDKxGEUQ6SBiUADOeiGdD131VcEzWOKRE3ZPlUG7EYVBLuQvwlNPDeE-3gBrFvqbBNBy9onIagWo00BkMYN3SHgI_Q5C1KO7it4mfuoN')' }}></div>
 <h3 className="font-headline-md text-headline-md text-primary mb-3">Private 1:1 Sessions</h3>
 <p className="font-body-md text-body-md text-secondary mb-6">In-home, highly personalized guidance. Ideal for beginners, injury recovery, or deepening a specific aspect of your practice.</p>
 <a className="inline-flex items-center gap-2 font-label-lg text-label-lg text-primary group-hover:text-healing-sage transition-colors" href="#">
                             View Details <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
 </a>
 </div>
-{/* Offering 2 */}
+<!-- Offering 2 -->
 <div className="group border border-secondary-container bg-surface p-8 rounded-lg hover:border-healing-sage transition-colors duration-300">
-<div className="h-48 mb-6 rounded bg-cover bg-center overflow-hidden" data-alt="A clean, bright image of a modern laptop screen displaying a high-quality video call of a yoga class. The setting around the laptop is a calm, minimal workspace with a small potted plant and a cup of tea. Emphasizes connection and community in a virtual setting." style={{ backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuCqhBIBFVXx1CfOVFN0GApKs9D9ECoJQoJYegLOZ0cndC4RxyOWMLcm6GSP5M6oJbBllQSxngYHl33Gc_GuYutosEGHig7kpE20cZDIK8aLNZQdY7nQWe_JovatHfjDFNjfItJ4KxUFNAvUm_8K24vJh6rZJIXSiSDudKHpQ2fReZHkbWsRbuQ68ucSifABBuVFV9xfmsRXCtAvXMutIvSh366eWOQkt4jla3EBnrlWKgyaegPh8xxPpwWt4kjB4v0hddQg90vDEsej')` }}></div>
+<div className="h-48 mb-6 rounded bg-cover bg-center overflow-hidden" data-alt="A clean, bright image of a modern laptop screen displaying a high-quality video call of a yoga class. The setting around the laptop is a calm, minimal workspace with a small potted plant and a cup of tea. Emphasizes connection and community in a virtual setting." style={{ backgroundImage: 'url('https://lh3.googleusercontent.com/aida-public/AB6AXuCqhBIBFVXx1CfOVFN0GApKs9D9ECoJQoJYegLOZ0cndC4RxyOWMLcm6GSP5M6oJbBllQSxngYHl33Gc_GuYutosEGHig7kpE20cZDIK8aLNZQdY7nQWe_JovatHfjDFNjfItJ4KxUFNAvUm_8K24vJh6rZJIXSiSDudKHpQ2fReZHkbWsRbuQ68ucSifABBuVFV9xfmsRXCtAvXMutIvSh366eWOQkt4jla3EBnrlWKgyaegPh8xxPpwWt4kjB4v0hddQg90vDEsej')' }}></div>
 <h3 className="font-headline-md text-headline-md text-primary mb-3">Virtual Group Classes</h3>
 <p className="font-body-md text-body-md text-secondary mb-6">Community-driven sessions accessible from anywhere. Focus on foundational alignment and synchronized breathwork.</p>
 <a className="inline-flex items-center gap-2 font-label-lg text-label-lg text-primary group-hover:text-healing-sage transition-colors" href="#">
                             View Details <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
 </a>
 </div>
-{/* Offering 3 */}
+<!-- Offering 3 -->
 <div className="group border border-secondary-container bg-surface p-8 rounded-lg hover:border-healing-sage transition-colors duration-300">
-<div className="h-48 mb-6 rounded bg-cover bg-center overflow-hidden" data-alt="A tranquil, high-quality photograph of a comfortable, sturdy chair set up in a serene room with yoga props like blocks and a bolster nearby. Soft, diffused lighting, muted earth tones. The image conveys gentle support, accessibility, and restorative healing." style={{ backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuAn82nRNXIL7NkgaaRB5C74lohRQZWhjM9nTKVLyIkBHIa3871SnxlSa8nuapcFzvcZy5DTlNfFOqvujXqfsVfYifEjc8w8AmftZp3Vr4EmfL-m55ga2MGd0Jncmc_GWuAHMmTb6wzT9xzw18iHxQ_1tExMXQNDSTWHeVxv7GGgTSm8lovu8HtYLyTpxSEG3ks0i2cJWkatQbDkH5c1u-bhTRrZct9juD-fI2yrAs-CHktxTz23FpVYEy9uLCZ-HIJ0oxzJwasHJb56')` }}></div>
+<div className="h-48 mb-6 rounded bg-cover bg-center overflow-hidden" data-alt="A tranquil, high-quality photograph of a comfortable, sturdy chair set up in a serene room with yoga props like blocks and a bolster nearby. Soft, diffused lighting, muted earth tones. The image conveys gentle support, accessibility, and restorative healing." style={{ backgroundImage: 'url('https://lh3.googleusercontent.com/aida-public/AB6AXuAn82nRNXIL7NkgaaRB5C74lohRQZWhjM9nTKVLyIkBHIa3871SnxlSa8nuapcFzvcZy5DTlNfFOqvujXqfsVfYifEjc8w8AmftZp3Vr4EmfL-m55ga2MGd0Jncmc_GWuAHMmTb6wzT9xzw18iHxQ_1tExMXQNDSTWHeVxv7GGgTSm8lovu8HtYLyTpxSEG3ks0i2cJWkatQbDkH5c1u-bhTRrZct9juD-fI2yrAs-CHktxTz23FpVYEy9uLCZ-HIJ0oxzJwasHJb56')' }}></div>
 <h3 className="font-headline-md text-headline-md text-primary mb-3">Chair &amp; Restorative</h3>
 <p className="font-body-md text-body-md text-secondary mb-6">Ultra-gentle practices utilizing props and chairs to eliminate strain, focusing entirely on deep relaxation and joint mobility.</p>
 <a className="inline-flex items-center gap-2 font-label-lg text-label-lg text-primary group-hover:text-healing-sage transition-colors" href="#">
@@ -109,14 +132,14 @@ export default function Page() {
 </div>
 </div>
 </section>
- Breathwork Section (Asymmetric Layout) 
+<!-- Breathwork Section (Asymmetric Layout) -->
 <section className="py-24 px-margin-mobile md:px-margin-desktop bg-primary text-surface-cream overflow-hidden">
 <div className="max-w-container-max mx-auto flex flex-col md:flex-row items-center gap-16">
 <div className="w-full md:w-1/2 relative">
-{/* Subtle decorative background element */}
+<!-- Subtle decorative background element -->
 <div className="absolute -inset-10 bg-gradient-to-tr from-healing-sage/10 to-transparent rounded-full blur-3xl"></div>
 <div className="relative rounded-lg overflow-hidden border border-surface-tint/30 aspect-[4/5]">
-<div className="w-full h-full bg-cover bg-center" data-alt="A moody, high-end photograph of a person's torso and face in profile, silhouetted against a soft, ethereal light source. They are deeply engaged in breathwork, eyes closed, expression calm. The aesthetic is minimalist luxury, using deep indigo blacks and muted silver tones to convey introspective stillness." style={{ backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuDy0AggsC9dWx29OLQ47VcE0b7kaklmkhRlrBpzmhy8HzhnkYO4cIpKxnjuUmt3ncFE4gZyPhOqLojVsvQ1jhEcIFFrgn5sgP4z4WUQ-dyAaVNAhOrNCftzaZEpoXNevR7N-HUZZU5MgjBBpalML6qiG6GMxw7iV6F67N6EiYduveXR9Mkj7P7hRWq0SJkv8zyhRR9iWT2C-DODT64fCy9OusmLcxqMEPMIQ_YP669Fst4ziyei0ZoW7NZJitZtK0tMaWRVEd4OVQNK')` }}></div>
+<div className="w-full h-full bg-cover bg-center" data-alt="A moody, high-end photograph of a person's torso and face in profile, silhouetted against a soft, ethereal light source. They are deeply engaged in breathwork, eyes closed, expression calm. The aesthetic is minimalist luxury, using deep indigo blacks and muted silver tones to convey introspective stillness." style={{ backgroundImage: 'url('https://lh3.googleusercontent.com/aida-public/AB6AXuDy0AggsC9dWx29OLQ47VcE0b7kaklmkhRlrBpzmhy8HzhnkYO4cIpKxnjuUmt3ncFE4gZyPhOqLojVsvQ1jhEcIFFrgn5sgP4z4WUQ-dyAaVNAhOrNCftzaZEpoXNevR7N-HUZZU5MgjBBpalML6qiG6GMxw7iV6F67N6EiYduveXR9Mkj7P7hRWq0SJkv8zyhRR9iWT2C-DODT64fCy9OusmLcxqMEPMIQ_YP669Fst4ziyei0ZoW7NZJitZtK0tMaWRVEd4OVQNK')' }}></div>
 </div>
 </div>
 <div className="w-full md:w-1/2">
@@ -152,7 +175,7 @@ export default function Page() {
 </div>
 </div>
 </section>
- Pricing / Schedule Table 
+<!-- Pricing / Schedule Table -->
 <section className="py-24 px-margin-mobile md:px-margin-desktop bg-surface">
 <div className="max-w-container-max mx-auto">
 <div className="text-center mb-16">
@@ -206,7 +229,48 @@ export default function Page() {
 </div>
 </div>
 </section>
+</main>
+ Footer Anchor 
+<footer className="bg-surface dark:bg-primary-container w-full pt-20 pb-10 border-t border-secondary-container">
+<div className="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-16">
+<div className="md:col-span-1">
+<h2 className="font-headline-lg text-headline-lg text-primary dark:text-primary-fixed-dim mb-4">Transcendental Healing</h2>
+<p className="font-body-md text-body-md text-secondary dark:text-on-secondary-container max-w-xs mb-6">A digital sanctuary for profound healing, prioritizing emotional safety and professional authority.</p>
+</div>
+<div>
+<h3 className="font-label-lg text-label-lg text-primary mb-4 uppercase tracking-widest">Practices</h3>
+<ul className="space-y-3">
+<li><a className="font-body-md text-body-md text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="#">Addiction Recovery</a></li>
+<li><a className="font-body-md text-body-md text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="#">Ayurvedic Healing</a></li>
+<li><a className="font-body-md text-body-md text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="#">Reflexology</a></li>
+</ul>
+</div>
+<div>
+<h3 className="font-label-lg text-label-lg text-primary mb-4 uppercase tracking-widest">Offerings</h3>
+<ul className="space-y-3">
+<li><a className="font-body-md text-body-md text-primary dark:text-primary-fixed-dim font-semibold hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="#">Yoga &amp; Breathwork</a></li>
+<li><a className="font-body-md text-body-md text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="#">Tarot</a></li>
+<li><a className="font-body-md text-body-md text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="#">Professional Training</a></li>
+</ul>
+</div>
+<div>
+<h3 className="font-label-lg text-label-lg text-primary mb-4 uppercase tracking-widest">Connect</h3>
+<ul className="space-y-3">
+<li><a className="font-body-md text-body-md text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="#">Newsletter Signup</a></li>
+<li><a className="font-body-md text-body-md text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="#">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div className="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto border-t border-secondary-container/50 pt-8 flex flex-col md:flex-row justify-between items-center">
+<p className="font-body-md text-body-md text-secondary dark:text-on-secondary-container">© 2024 Transcendental Healing. All Rights Reserved.</p>
+<div className="flex gap-4 mt-4 md:mt-0">
+<a className="text-secondary hover:text-primary transition-colors" href="#"><span className="material-symbols-outlined">share</span></a>
+<a className="text-secondary hover:text-primary transition-colors" href="#"><span className="material-symbols-outlined">mail</span></a>
+</div>
+</div>
+</footer>
 
+      {/* END RAW HTML IMPORT */}
     </>
   );
 }
