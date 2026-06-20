@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { EB_Garamond, Inter } from "next/font/google";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 import "./globals.css";
 
 const ebGaramond = EB_Garamond({
@@ -38,7 +40,9 @@ export default function RootLayout({
         />
       </head>
       <body className="bg-background text-on-background selection:bg-healing-sage/30 selection:text-primary min-h-screen flex flex-col">
-        {children}
+        <Navbar />
+        <main className="flex-grow pt-[88px]">{children}</main>
+        <Footer />
       </body>
     </html>
   );
