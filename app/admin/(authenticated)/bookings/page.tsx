@@ -2,7 +2,12 @@ import { createClient } from "@/lib/supabase/server";
 
 export default async function AdminBookings() {
   const supabase = await createClient();
-  const { data: bookings } = await supabase.from('bookings').select('*').order('created_at', { ascending: false });
+  const { data, error } = await supabase
+    .from("bookings")
+    .select("*")
+    .order("created_at", { ascending: false });
+    
+  const bookings: any[] = data || [];
 
   return (
     <div className="p-8">

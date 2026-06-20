@@ -6,10 +6,11 @@ import { createClient } from "@/lib/supabase/server";
 const contactSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
   email: z.string().email("Invalid email address"),
+  service_type: z.string().optional(),
   message: z.string().min(10, "Message must be at least 10 characters"),
 });
 
-export async function submitContactForm(prevState: unknown, formData: FormData) {
+export async function submitContactForm(formData: FormData) {
   const data = Object.fromEntries(formData.entries());
   
   const result = contactSchema.safeParse(data);
@@ -24,13 +25,12 @@ export async function submitContactForm(prevState: unknown, formData: FormData) 
 
   const supabase = await createClient();
   
-  const { error } = await supabase.from("contact_messages").insert([
-    {
+  const { error } = await supabase.from("contact_messages").insert([{
       name: result.data.name,
       email: result.data.email,
+      service: result.data.service_type || null,
       message: result.data.message,
-    },
-  ]);
+    }] as any);
 
   if (error) {
     return {
@@ -46,15 +46,15 @@ export async function submitContactForm(prevState: unknown, formData: FormData) 
 }
 
 const bookingSchema = z.object({
-  name: z.string().min(2, "Name must be at least 2 characters"),
-  email: z.string().email("Invalid email address"),
+  name: z.string().optional(),
+  email: z.string().optional(),
   phone: z.string().optional(),
-  service_type: z.string().min(1, "Please select a service"),
-  booking_date: z.string().min(1, "Please select a date"),
+  service_type: z.string().optional(),
+  booking_date: z.string().optional(),
   notes: z.string().optional(),
 });
 
-export async function submitBookingForm(prevState: unknown, formData: FormData) {
+export async function submitBookingForm(formData: FormData) {
   const data = Object.fromEntries(formData.entries());
   
   const result = bookingSchema.safeParse(data);
@@ -69,16 +69,14 @@ export async function submitBookingForm(prevState: unknown, formData: FormData) 
 
   const supabase = await createClient();
   
-  const { error } = await supabase.from("bookings").insert([
-    {
+  const { error } = await supabase.from("bookings").insert([{
       name: result.data.name,
       email: result.data.email,
       phone: result.data.phone || null,
       service_type: result.data.service_type,
       booking_date: result.data.booking_date,
       notes: result.data.notes || null,
-    },
-  ]);
+    }] as any);
 
   if (error) {
     return {
@@ -97,7 +95,7 @@ const newsletterSchema = z.object({
   email: z.string().email("Invalid email address"),
 });
 
-export async function submitNewsletter(prevState: unknown, formData: FormData) {
+export async function submitNewsletter(formData: FormData) {
   const email = formData.get("email");
   
   const result = newsletterSchema.safeParse({ email });
@@ -112,9 +110,9 @@ export async function submitNewsletter(prevState: unknown, formData: FormData) {
   const supabase = await createClient();
   
   // Using upsert or ignoring duplicates usually requires unique constraint in DB
-  const { error } = await supabase.from("newsletter").insert([
-    { email: result.data.email },
-  ]);
+  const { error } = await supabase.from("newsletter_subscribers").insert([{
+      email: result.data.email,
+    }] as any);
 
   if (error) {
     if (error.code === '23505') { // Postgres unique violation code

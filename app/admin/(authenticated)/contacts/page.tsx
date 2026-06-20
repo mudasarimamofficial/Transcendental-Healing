@@ -2,7 +2,12 @@ import { createClient } from "@/lib/supabase/server";
 
 export default async function AdminContacts() {
   const supabase = await createClient();
-  const { data: messages } = await supabase.from('contact_messages').select('*').order('created_at', { ascending: false });
+  const { data, error } = await supabase
+    .from("contact_messages")
+    .select("*")
+    .order("created_at", { ascending: false });
+    
+  const messages: any[] = data || [];
 
   return (
     <div className="p-8">
