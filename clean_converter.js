@@ -82,15 +82,19 @@ function processHtmlFile(filePath) {
     const scripts = body.querySelectorAll('script');
     scripts.forEach(s => s.remove());
     
-    // Remove localized navs, headers, footers
-    const navs = body.querySelectorAll('nav');
-    navs.forEach(n => n.remove());
+    // Safely remove ONLY the top-level header/nav and footer
+    // First try to find a top-level header, else fallback to nav
+    const mainHeader = body.querySelector('header');
+    if (mainHeader) {
+        mainHeader.remove();
+    } else {
+        const mainNav = body.querySelector('nav');
+        if (mainNav) mainNav.remove();
+    }
     
-    const headers = body.querySelectorAll('header');
-    headers.forEach(h => h.remove());
-    
-    const footers = body.querySelectorAll('footer');
-    footers.forEach(f => f.remove());
+    // Remove the footer
+    const mainFooter = body.querySelector('footer');
+    if (mainFooter) mainFooter.remove();
     
     // htmltojsx doesn't convert comments, it completely removes them! 
     // This is perfect, because we don't need <!-- Hero --> in production!
