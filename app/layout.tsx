@@ -17,8 +17,38 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Transcendental Healing",
-  description: "A sanctuary for profound self-discovery and holistic addiction recovery.",
+  title: "Ethereal Sanctum | Transcendental Healing Science & Soul",
+  description: "A profound journey of healing blending ancient wisdom with modern neuroscience. Ethereal Sanctum offers therapy, yoga, breathwork, tarot, and holistic restoration.",
+  metadataBase: new URL('https://transcendentalhealing.com'),
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: "Ethereal Sanctum | Transcendental Healing",
+    description: "A profound journey of healing blending ancient wisdom with modern neuroscience.",
+    url: "https://transcendentalhealing.com",
+    siteName: "Transcendental Healing",
+    images: [
+      {
+        url: "https://lh3.googleusercontent.com/aida-public/AB6AXuCYmDEoqHR1wAw6YwfbNhuU6TerkLJSfa3DTxwRpgByfogdh5on5L4VY0FtuOcGayuziCibfPj78YA7ixI8-hwzJihdalOYff2IgbigIJ_9C1kk8iBWZKVlQy4TGRoy1kNo7Dqo7J_mPB9U1ndc5oQf0jJCmqm76U8yl5RSu8gckJY6TPpCAgQ2l7hBBqDHxYTbkj_MS4ErJ8UzgzLdB6zqu6Ij5wYKjd1b6LvhYJLiAc1mrciLXxvDLgNrZ4tpMMbWlq-Ovf6Fraia",
+        width: 1200,
+        height: 630,
+        alt: "Ethereal Sanctum Transcendental Healing",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ethereal Sanctum | Transcendental Healing",
+    description: "A profound journey of healing blending ancient wisdom with modern neuroscience.",
+    images: ["https://lh3.googleusercontent.com/aida-public/AB6AXuCYmDEoqHR1wAw6YwfbNhuU6TerkLJSfa3DTxwRpgByfogdh5on5L4VY0FtuOcGayuziCibfPj78YA7ixI8-hwzJihdalOYff2IgbigIJ_9C1kk8iBWZKVlQy4TGRoy1kNo7Dqo7J_mPB9U1ndc5oQf0jJCmqm76U8yl5RSu8gckJY6TPpCAgQ2l7hBBqDHxYTbkj_MS4ErJ8UzgzLdB6zqu6Ij5wYKjd1b6LvhYJLiAc1mrciLXxvDLgNrZ4tpMMbWlq-Ovf6Fraia"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  }
 };
 
 export default function RootLayout({
