@@ -6,12 +6,15 @@ export async function middleware(request: NextRequest) {
     request,
   })
 
-  // If Supabase keys are missing, allow public routes but block admin
-  if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) {
-    if (request.nextUrl.pathname.startsWith('/admin')) {
-      return new NextResponse('Supabase configuration is missing. Please set NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY in Vercel.', { status: 500 });
-    }
+  // ONLY enforce authentication on /admin routes.
+  // Bypass all database checks for public routes to ensure maximum performance and stability.
+  if (!request.nextUrl.pathname.startsWith('/admin')) {
     return supabaseResponse;
+  }
+
+  // If Supabase keys are missing, block admin
+  if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) {
+    return new NextResponse('Supabase configuration is missing. Please set NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY in Vercel.', { status: 500 });
   }
 
   try {
