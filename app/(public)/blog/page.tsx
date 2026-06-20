@@ -13,12 +13,12 @@ export default function Page() {
         Transcendental Healing
       </div>
       <div className="hidden md:flex items-center space-x-8">
-        <a className="font-label-lg text-label-lg text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300" href="/index.html">Home</a>
-        <a className="font-label-lg text-label-lg text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300" href="/about.html">About</a>
-        <a className="font-label-lg text-label-lg text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300" href="/services/addiction-recovery.html">Services</a>
-        <a className="font-label-lg text-label-lg text-primary dark:text-primary-fixed-dim border-b-2 border-healing-sage pb-1 Active: opacity-80 transition-opacity duration-200" href="/continuing-education.html">Education</a>
-        <a className="font-label-lg text-label-lg text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300" href="/podcast/index.html">Podcast</a>
-        <a className="font-label-lg text-label-lg text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300" href="/blog/index.html">Resources</a>
+        <a className="font-label-lg text-label-lg text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300" href="/">Home</a>
+        <a className="font-label-lg text-label-lg text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300" href="/about">About</a>
+        <a className="font-label-lg text-label-lg text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300" href="/services/addiction-recovery">Services</a>
+        <a className="font-label-lg text-label-lg text-primary dark:text-primary-fixed-dim border-b-2 border-healing-sage pb-1 Active: opacity-80 transition-opacity duration-200" href="/continuing-education">Education</a>
+        <a className="font-label-lg text-label-lg text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300" href="/podcast">Podcast</a>
+        <a className="font-label-lg text-label-lg text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300" href="/blog">Resources</a>
       </div>
       <div className="hidden md:block">
         <a className="inline-flex items-center justify-center px-8 py-3 bg-primary text-tertiary-fixed font-label-lg text-label-lg rounded transition-colors hover:bg-ether-indigo-light" href="#enroll">
@@ -290,17 +290,17 @@ export default function Page() {
         <div>
           <h4 className="font-label-lg text-label-lg text-primary mb-4 uppercase tracking-wider">Services</h4>
           <ul className="space-y-3 font-body-md text-body-md">
-            <li><a className="text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="/services/addiction-recovery.html">Addiction Recovery</a></li>
-            <li><a className="text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="/services/ayurveda.html">Ayurvedic Healing</a></li>
-            <li><a className="text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="/services/reflexology.html">Reflexology</a></li>
-            <li><a className="text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="/services/yoga.html">Yoga &amp; Breathwork</a></li>
-            <li><a className="text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="/services/tarot.html">Tarot</a></li>
+            <li><a className="text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="/services/addiction-recovery">Addiction Recovery</a></li>
+            <li><a className="text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="/services/ayurveda">Ayurvedic Healing</a></li>
+            <li><a className="text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="/services/reflexology">Reflexology</a></li>
+            <li><a className="text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="/services/yoga">Yoga &amp; Breathwork</a></li>
+            <li><a className="text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="/services/tarot">Tarot</a></li>
           </ul>
         </div>
         <div>
           <h4 className="font-label-lg text-label-lg text-primary mb-4 uppercase tracking-wider">Education</h4>
           <ul className="space-y-3 font-body-md text-body-md">
-            <li><a className="text-primary dark:text-primary-fixed-dim font-semibold focus:outline-none focus:ring-1 focus:ring-healing-sage" href="/continuing-education.html">Professional Training</a></li>
+            <li><a className="text-primary dark:text-primary-fixed-dim font-semibold focus:outline-none focus:ring-1 focus:ring-healing-sage" href="/continuing-education">Professional Training</a></li>
             <li><a className="text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="#">Newsletter Signup</a></li>
           </ul>
         </div>

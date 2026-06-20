@@ -13,11 +13,11 @@ export default function Page() {
         Ethereal Sanctum
       </div>
       <div className="hidden md:flex items-center space-x-8">
-        <a className="text-on-surface-variant hover:text-tertiary-fixed-dim transition-all duration-300 font-body-md text-body-md tracking-wide" href="/index.html">Home</a>
-        <a className="text-primary border-b border-tertiary-fixed-dim pb-1 font-body-md text-body-md tracking-wide" href="/about.html">About</a>
-        <a className="text-on-surface-variant hover:text-tertiary-fixed-dim transition-all duration-300 font-body-md text-body-md tracking-wide" href="/services/addiction-recovery.html">Services</a>
+        <a className="text-on-surface-variant hover:text-tertiary-fixed-dim transition-all duration-300 font-body-md text-body-md tracking-wide" href="/">Home</a>
+        <a className="text-primary border-b border-tertiary-fixed-dim pb-1 font-body-md text-body-md tracking-wide" href="/about">About</a>
+        <a className="text-on-surface-variant hover:text-tertiary-fixed-dim transition-all duration-300 font-body-md text-body-md tracking-wide" href="/services/addiction-recovery">Services</a>
         <a className="text-on-surface-variant hover:text-tertiary-fixed-dim transition-all duration-300 font-body-md text-body-md tracking-wide" href="#">Continuing Education</a>
-        <a className="text-on-surface-variant hover:text-tertiary-fixed-dim transition-all duration-300 font-body-md text-body-md tracking-wide" href="/podcast/index.html">Podcast</a>
+        <a className="text-on-surface-variant hover:text-tertiary-fixed-dim transition-all duration-300 font-body-md text-body-md tracking-wide" href="/podcast">Podcast</a>
       </div>
       <div className="hidden md:block">
         <button className="bg-primary text-on-primary px-8 py-3 rounded-DEFAULT font-label-lg text-label-lg hover:bg-ether-indigo-light transition-colors">

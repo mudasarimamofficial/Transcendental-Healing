@@ -10,20 +10,20 @@ export default function Page() {
   {/* TopNavBar Shared Component */}
   <header className="bg-surface-cream/80 backdrop-blur-md dark:bg-primary/80 fixed top-0 w-full z-50 bg-surface-cream/90 border-b border-secondary-container/30 transition-all duration-300" id="top-nav">
     <div className="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto font-label-lg text-label-lg text-primary dark:text-primary-fixed-dim">
-      <a className="font-headline-md text-headline-md font-medium tracking-tight text-primary dark:text-primary-fixed-dim" href="/index.html">
+      <a className="font-headline-md text-headline-md font-medium tracking-tight text-primary dark:text-primary-fixed-dim" href="/">
         Transcendental Healing
       </a>
       {/* Desktop Nav */}
       <nav className="hidden md:flex items-center gap-8">
-        <a className="text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300" href="/index.html">Home</a>
-        <a className="text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300" href="/about.html">About</a>
-        <a className="text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300" href="/services/addiction-recovery.html">Services</a>
-        <a className="text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300" href="/continuing-education.html">Education</a>
-        <a className="text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300" href="/podcast/index.html">Podcast</a>
-        <a className="text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300" href="/blog/index.html">Resources</a>
+        <a className="text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300" href="/">Home</a>
+        <a className="text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300" href="/about">About</a>
+        <a className="text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300" href="/services/addiction-recovery">Services</a>
+        <a className="text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300" href="/continuing-education">Education</a>
+        <a className="text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300" href="/podcast">Podcast</a>
+        <a className="text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300" href="/blog">Resources</a>
       </nav>
       <div className="hidden md:block">
-        <a className="inline-flex items-center justify-center px-8 py-3 bg-primary text-on-primary rounded-full hover:bg-ether-indigo-light transition-colors duration-300 font-label-lg text-label-lg" href="/booking/index.html">
+        <a className="inline-flex items-center justify-center px-8 py-3 bg-primary text-on-primary rounded-full hover:bg-ether-indigo-light transition-colors duration-300 font-label-lg text-label-lg" href="/booking">
           Book a Session
         </a>
       </div>
@@ -172,16 +172,16 @@ export default function Page() {
       {/* Links Column 1 */}
       <div className="flex flex-col gap-3 font-body-md text-body-md">
         <h4 className="font-label-lg text-label-lg text-primary mb-2">Practice</h4>
-        <a className="text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="/services/addiction-recovery.html">Addiction Recovery</a>
-        <a className="text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="/services/ayurveda.html">Ayurvedic Healing</a>
-        <a className="text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="/services/reflexology.html">Reflexology</a>
+        <a className="text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="/services/addiction-recovery">Addiction Recovery</a>
+        <a className="text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="/services/ayurveda">Ayurvedic Healing</a>
+        <a className="text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="/services/reflexology">Reflexology</a>
       </div>
       {/* Links Column 2 */}
       <div className="flex flex-col gap-3 font-body-md text-body-md">
         <h4 className="font-label-lg text-label-lg text-primary mb-2">Offerings</h4>
-        <a className="text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="/services/yoga.html">Yoga &amp; Breathwork</a>
-        <a className="text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="/services/tarot.html">Tarot</a>
-        <a className="text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="/continuing-education.html">Professional Training</a>
+        <a className="text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="/services/yoga">Yoga &amp; Breathwork</a>
+        <a className="text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="/services/tarot">Tarot</a>
+        <a className="text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="/continuing-education">Professional Training</a>
       </div>
       {/* Community */}
       <div className="flex flex-col gap-3 font-body-md text-body-md">

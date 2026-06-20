@@ -13,12 +13,12 @@ export default function Page() {
         Transcendental Healing
       </div>
       <div className="hidden md:flex gap-8 items-center">
-        <a className="text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300 font-label-lg text-label-lg" href="/index.html">Home</a>
-        <a className="text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300 font-label-lg text-label-lg" href="/about.html">About</a>
-        <a className="text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300 font-label-lg text-label-lg" href="/services/addiction-recovery.html">Services</a>
-        <a className="text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300 font-label-lg text-label-lg" href="/continuing-education.html">Education</a>
-        <a className="text-primary dark:text-primary-fixed-dim border-b-2 border-healing-sage pb-1 hover:text-healing-sage transition-colors duration-300 font-label-lg text-label-lg opacity-80 transition-opacity duration-200" href="/podcast/index.html">Podcast</a>
-        <a className="text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300 font-label-lg text-label-lg" href="/blog/index.html">Resources</a>
+        <a className="text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300 font-label-lg text-label-lg" href="/">Home</a>
+        <a className="text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300 font-label-lg text-label-lg" href="/about">About</a>
+        <a className="text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300 font-label-lg text-label-lg" href="/services/addiction-recovery">Services</a>
+        <a className="text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300 font-label-lg text-label-lg" href="/continuing-education">Education</a>
+        <a className="text-primary dark:text-primary-fixed-dim border-b-2 border-healing-sage pb-1 hover:text-healing-sage transition-colors duration-300 font-label-lg text-label-lg opacity-80 transition-opacity duration-200" href="/podcast">Podcast</a>
+        <a className="text-on-secondary-container dark:text-on-primary-container hover:text-healing-sage transition-colors duration-300 font-label-lg text-label-lg" href="/blog">Resources</a>
       </div>
       <button className="hidden md:block bg-primary text-on-primary px-8 py-3 rounded-full font-label-lg text-label-lg hover:bg-ether-indigo-light transition-colors duration-300">
         Book a Session
@@ -310,20 +310,20 @@ export default function Page() {
       </div>
       <div className="col-span-1 flex flex-col gap-4">
         <h4 className="font-label-lg text-label-lg text-primary uppercase tracking-wider mb-2">Practice</h4>
-        <a className="font-body-md text-body-md text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="/services/addiction-recovery.html">Addiction Recovery</a>
-        <a className="font-body-md text-body-md text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="/services/ayurveda.html">Ayurvedic Healing</a>
-        <a className="font-body-md text-body-md text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="/services/reflexology.html">Reflexology</a>
+        <a className="font-body-md text-body-md text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="/services/addiction-recovery">Addiction Recovery</a>
+        <a className="font-body-md text-body-md text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="/services/ayurveda">Ayurvedic Healing</a>
+        <a className="font-body-md text-body-md text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="/services/reflexology">Reflexology</a>
       </div>
       <div className="col-span-1 flex flex-col gap-4">
         <h4 className="font-label-lg text-label-lg text-primary uppercase tracking-wider mb-2">Wisdom</h4>
-        <a className="font-body-md text-body-md text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="/services/yoga.html">Yoga &amp; Breathwork</a>
-        <a className="font-body-md text-body-md text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="/services/tarot.html">Tarot</a>
-        <a className="font-body-md text-body-md text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="/continuing-education.html">Professional Training</a>
+        <a className="font-body-md text-body-md text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="/services/yoga">Yoga &amp; Breathwork</a>
+        <a className="font-body-md text-body-md text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="/services/tarot">Tarot</a>
+        <a className="font-body-md text-body-md text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="/continuing-education">Professional Training</a>
       </div>
       <div className="col-span-1 flex flex-col gap-4">
         <h4 className="font-label-lg text-label-lg text-primary uppercase tracking-wider mb-2">Connect</h4>
         <a className="font-body-md text-body-md text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="#">Newsletter Signup</a>
-        <a className="font-body-md text-body-md text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="/contact.html">Contact Us</a>
+        <a className="font-body-md text-body-md text-secondary dark:text-on-secondary-container hover:text-healing-sage transition-colors duration-300 focus:outline-none focus:ring-1 focus:ring-healing-sage" href="/contact">Contact Us</a>
       </div>
     </div>
     <div className="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto border-t border-secondary-container/50 pt-8 flex justify-between items-center">

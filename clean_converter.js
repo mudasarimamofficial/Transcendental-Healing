@@ -113,6 +113,14 @@ function processHtmlFile(filePath) {
     
     jsxContent = insertFormActions(jsxContent);
     
+    // Fix internal navigation links
+    // 1. Remove .html from any absolute path
+    jsxContent = jsxContent.replace(/href="\/([^"]+)\.html"/g, 'href="/$1"');
+    // 2. Fix nested index pages e.g. /podcast/index -> /podcast
+    jsxContent = jsxContent.replace(/href="\/([^"]+)\/index"/g, 'href="/$1"');
+    // 3. Fix root index e.g. /index -> /
+    jsxContent = jsxContent.replace(/href="\/index"/g, 'href="/"');
+    
     // Turn <a> to <Link> for internal links safely?
     // Let's stick to standard <a> tags as the user wants PIXEL PERFECT. Next.js handles <a> fine, just slower routing.
     

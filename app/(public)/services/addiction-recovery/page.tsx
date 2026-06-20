@@ -13,11 +13,11 @@ export default function Page() {
         Ethereal Sanctum
       </a>
       <nav className="hidden md:flex items-center space-x-gutter">
-        <a className="font-body-md text-body-md tracking-wide text-on-surface-variant hover:text-tertiary-fixed-dim transition-all duration-300" href="/index.html">Home</a>
-        <a className="font-body-md text-body-md tracking-wide text-on-surface-variant hover:text-tertiary-fixed-dim transition-all duration-300" href="/about.html">About</a>
-        <a className="font-body-md text-body-md tracking-wide text-primary border-b border-tertiary-fixed-dim pb-1 hover:text-tertiary-fixed-dim transition-all duration-300" href="/services/addiction-recovery.html">Services</a>
+        <a className="font-body-md text-body-md tracking-wide text-on-surface-variant hover:text-tertiary-fixed-dim transition-all duration-300" href="/">Home</a>
+        <a className="font-body-md text-body-md tracking-wide text-on-surface-variant hover:text-tertiary-fixed-dim transition-all duration-300" href="/about">About</a>
+        <a className="font-body-md text-body-md tracking-wide text-primary border-b border-tertiary-fixed-dim pb-1 hover:text-tertiary-fixed-dim transition-all duration-300" href="/services/addiction-recovery">Services</a>
         <a className="font-body-md text-body-md tracking-wide text-on-surface-variant hover:text-tertiary-fixed-dim transition-all duration-300" href="#">Continuing Education</a>
-        <a className="font-body-md text-body-md tracking-wide text-on-surface-variant hover:text-tertiary-fixed-dim transition-all duration-300" href="/podcast/index.html">Podcast</a>
+        <a className="font-body-md text-body-md tracking-wide text-on-surface-variant hover:text-tertiary-fixed-dim transition-all duration-300" href="/podcast">Podcast</a>
       </nav>
       <a className="hidden md:inline-flex items-center justify-center bg-primary text-on-primary font-label-lg text-label-lg px-8 py-3 rounded-full hover:bg-ether-indigo-light transition-colors duration-300" href="#book">
         Book a Session
@@ -117,9 +117,9 @@ export default function Page() {
     <div className="col-span-1">
       <h4 className="font-label-lg text-label-lg text-primary mb-4 uppercase tracking-wider">Quick Links</h4>
       <ul className="space-y-3">
-        <li><a className="font-label-lg text-label-lg text-secondary hover:text-primary underline-offset-4 hover:underline transition-all duration-300 ease-in-out" href="/about.html">About</a></li>
-        <li><a className="font-label-lg text-label-lg text-secondary hover:text-primary underline-offset-4 hover:underline transition-all duration-300 ease-in-out" href="/services/addiction-recovery.html">Services</a></li>
-        <li><a className="font-label-lg text-label-lg text-secondary hover:text-primary underline-offset-4 hover:underline transition-all duration-300 ease-in-out" href="/podcast/index.html">Podcast</a></li>
+        <li><a className="font-label-lg text-label-lg text-secondary hover:text-primary underline-offset-4 hover:underline transition-all duration-300 ease-in-out" href="/about">About</a></li>
+        <li><a className="font-label-lg text-label-lg text-secondary hover:text-primary underline-offset-4 hover:underline transition-all duration-300 ease-in-out" href="/services/addiction-recovery">Services</a></li>
+        <li><a className="font-label-lg text-label-lg text-secondary hover:text-primary underline-offset-4 hover:underline transition-all duration-300 ease-in-out" href="/podcast">Podcast</a></li>
       </ul>
     </div>
     <div className="col-span-1">
