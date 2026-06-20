@@ -14,43 +14,50 @@ export async function middleware(request: NextRequest) {
     return supabaseResponse;
   }
 
-  const supabase = createServerClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
-    {
-      cookies: {
-        getAll() {
-          return request.cookies.getAll()
+  try {
+    const supabase = createServerClient(
+      process.env.NEXT_PUBLIC_SUPABASE_URL,
+      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
+      {
+        cookies: {
+          getAll() {
+            return request.cookies.getAll()
+          },
+          setAll(cookiesToSet) {
+            cookiesToSet.forEach(({ name, value, options }) => request.cookies.set(name, value))
+            supabaseResponse = NextResponse.next({
+              request,
+            })
+            cookiesToSet.forEach(({ name, value, options }) =>
+              supabaseResponse.cookies.set(name, value, options)
+            )
+          },
         },
-        setAll(cookiesToSet) {
-          cookiesToSet.forEach(({ name, value, options }) => request.cookies.set(name, value))
-          supabaseResponse = NextResponse.next({
-            request,
-          })
-          cookiesToSet.forEach(({ name, value, options }) =>
-            supabaseResponse.cookies.set(name, value, options)
-          )
-        },
-      },
+      }
+    )
+
+    const {
+      data: { user },
+    } = await supabase.auth.getUser()
+
+    if (request.nextUrl.pathname.startsWith('/admin') && !user) {
+      if (request.nextUrl.pathname !== '/admin/login') {
+        const url = request.nextUrl.clone()
+        url.pathname = '/admin/login'
+        return NextResponse.redirect(url)
+      }
     }
-  )
 
-  const {
-    data: { user },
-  } = await supabase.auth.getUser()
-
-  if (request.nextUrl.pathname.startsWith('/admin') && !user) {
-    if (request.nextUrl.pathname !== '/admin/login') {
+    if (request.nextUrl.pathname === '/admin/login' && user) {
       const url = request.nextUrl.clone()
-      url.pathname = '/admin/login'
+      url.pathname = '/admin'
       return NextResponse.redirect(url)
     }
-  }
-
-  if (request.nextUrl.pathname === '/admin/login' && user) {
-    const url = request.nextUrl.clone()
-    url.pathname = '/admin'
-    return NextResponse.redirect(url)
+  } catch (error) {
+    // If Supabase fails to initialize (e.g. invalid URL format), fallback to blocking admin routes
+    if (request.nextUrl.pathname.startsWith('/admin')) {
+      return new NextResponse('Supabase connection failed. Please ensure NEXT_PUBLIC_SUPABASE_URL is a valid URL.', { status: 500 });
+    }
   }
 
   return supabaseResponse
