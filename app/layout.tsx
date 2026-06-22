@@ -239,8 +239,65 @@ export default function RootLayout({
             })
           }}
         />
+        <style dangerouslySetInnerHTML={{__html: `
+          /* 4-Tier Typography Scale Enforcer */
+          body, p, .font-body-md, .font-body-lg { font-size: 16px !important; }
+          .font-label-sm { font-size: 14px !important; }
+          
+          h1, .font-display-lg, .font-display-lg-mobile { font-size: 22px !important; line-height: 1.2 !important; }
+          h2, .font-headline-lg { font-size: 20px !important; line-height: 1.2 !important; }
+          h3, .font-headline-md { font-size: 18px !important; line-height: 1.3 !important; }
+          h4 { font-size: 16px !important; font-weight: 700 !important; line-height: 1.3 !important; }
+          h5 { font-size: 15px !important; font-weight: 700 !important; line-height: 1.4 !important; }
+          h6 { font-size: 14px !important; font-weight: 700 !important; line-height: 1.4 !important; }
+
+          @media (min-width: 768px) {
+            h1, .font-display-lg, .font-display-lg-mobile { font-size: 28px !important; }
+            h2, .font-headline-lg { font-size: 24px !important; }
+            h3, .font-headline-md { font-size: 22px !important; }
+            h4 { font-size: 20px !important; font-weight: 500 !important; }
+            h5 { font-size: 18px !important; font-weight: 500 !important; }
+            h6 { font-size: 16px !important; font-weight: 700 !important; }
+          }
+          
+          @media (min-width: 1024px) {
+            h1, .font-display-lg, .font-display-lg-mobile { font-size: 36px !important; }
+            h2, .font-headline-lg { font-size: 30px !important; }
+            h3, .font-headline-md { font-size: 26px !important; }
+            h4 { font-size: 22px !important; }
+            h5 { font-size: 20px !important; }
+            h6 { font-size: 18px !important; }
+          }
+
+          @media (min-width: 1440px) {
+            h1, .font-display-lg, .font-display-lg-mobile { font-size: 42px !important; }
+            h2, .font-headline-lg { font-size: 36px !important; }
+            h3, .font-headline-md { font-size: 30px !important; }
+            h4 { font-size: 26px !important; }
+            h5 { font-size: 22px !important; }
+            h6 { font-size: 18px !important; }
+            body, p, .font-body-md, .font-body-lg { font-size: 18px !important; }
+          }
+          
+          /* Global Responsive Guardrails */
+          html, body {
+            overflow-x: hidden !important;
+            width: 100%;
+            max-width: 100vw;
+          }
+          
+          /* Mobile-First Perfection: Touch Targets */
+          @media (max-width: 767px) {
+            button, a[class*="py-"], a[class*="px-"] {
+              min-height: 44px;
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+        `}} />
       </head>
-      <body suppressHydrationWarning>
+      <body suppressHydrationWarning className="overflow-x-hidden w-full max-w-full">
         {children}
       </body>
     </html>
